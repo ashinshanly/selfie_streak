@@ -37,12 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #third party apps
-    'sorl.thumbnail',
-    'crispy_forms',
-    'social_django', 
+    # third party apps
+    # 'sorl.thumbnail',
+    # 'crispy_forms',
+    'social_django',
     'selfiecontest',
 ]
+
 """
 INSTALLED_APPS += [
     'django_helpers',
@@ -76,7 +77,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"templates")],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,7 +88,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                'social_django.context_processors.backends',  
+                'social_django.context_processors.backends',
                 'social_django.context_processors.login_redirect',
             ],
         },
@@ -97,7 +98,7 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
     'social_core.backends.facebook.FacebookOAuth2',
-
+    
     'django.contrib.auth.backends.ModelBackend',
 )
 WSGI_APPLICATION = 'myproject.wsgi.application'
@@ -145,12 +146,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,"static_in_pro","our_static"),
+    os.path.join(BASE_DIR, "static_in_pro", "our_static"),
 )
 
 #
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3' 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'thottanjohn@gmail.com'
@@ -158,10 +160,9 @@ EMAIL_HOST_PASSWORD = 'johntony'
 EMAIL_PORT = 587
 
 ACCOUNT_ACTIVATION_DAYS = 7
-REGISTRATION_AUTO_LOGIN =True
-SITE_ID=1
-LOGIN_REDIRECT_URL ="/"
-
+REGISTRATION_AUTO_LOGIN = True
+SITE_ID = 1
+LOGIN_REDIRECT_URL = "/"
 
 SOCIAL_AUTH_TWITTER_KEY = '9ao6C646gtHbjTCONTMTDorga'
 
