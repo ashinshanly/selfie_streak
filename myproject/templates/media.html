@@ -1,0 +1,162 @@
+{% extends "based.html" %}
+{% load staticfiles%}
+<!DOCTYPE HTML>
+{% block a %}
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>Your Entries</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'css3/profile/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="{% static 'css3/profile/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css3/profile/ionicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/main.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/style.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/responsive.css' %}" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="{% static 'js3/profile/modernizr.js' %}"></script>
+
+<!-- Online Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="dark-layout">
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  
+  
+  <!-- Content -->
+  <div id="content"> 
+    
+    <!-- MAIN BANNER -->
+    <section class="main-bnr">
+      <div class="container">
+        <div class="media">
+          <div class="media-left"> 
+            <!-- Avatar -->
+            {% if user.profile.pic.url is not none %}
+                <div class="avatar"><img class="img-responsive" src="{{user.profile.pic.url}}" alt="image description"></div>
+            {% endif %}
+            
+          </div>
+          <div class="media-body">
+            <h1>
+
+            <strong>{{ user.first_name }}</strong>
+            </h1>
+            <p style="color: black;"><i class="fa fa-university"></i> &nbsp {{ user.profile.college }}</p>
+            <p style="color: black;"><i class="fa fa-map-marker"></i> {{ user.profile.city}}</p>
+            <div class="flowers"> <span style="color: black;"><i class="fa fa-mobile"></i>   Snaps: 56 </span><span style="color: black;"><i class="fa fa-heart"></i>  Likes: 834</span> </div>
+            
+            <!-- Btn --> 
+            <a href="#." class="btn"><i class="fa fa-user-plus"></i>Follow</a> <a href="#." data-toggle="modal" data-target="#myModal" class="btn"><i class="fa fa-envelope-o"></i>Send A Message</a> <a href="#." class="btn"><i class="fa fa-share-alt"></i>Share Profile</a> </div>
+        </div>
+      </div>
+      
+      <!-- COnatct Form PopUp -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="container">
+              <h6><a class="close" href="#." data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a> Send Message</h6>
+              
+              <!-- Forms -->
+              <form action="#">
+                <ul class="row">
+                  <li class="col-xs-12">
+                    <input type="text" placeholder="First Name ">
+                  </li>
+                  <li class="col-xs-6">
+                    <input type="text" placeholder="Email">
+                  </li>
+                  <li class="col-xs-6">
+                    <input type="text" placeholder="Subjext">
+                  </li>
+                  <li class="col-xs-12">
+                    <textarea placeholder="Your Message"></textarea>
+                  </li>
+                  <li class="col-xs-12 text-center">
+                    <button class="btn btn-primary">Send message</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COnatct Form PopUp --> 
+    </section>
+    
+    <!-- Nav Bar Block -->
+    <div class="container">
+      <div class="nav-bar-block">
+        <ul>
+          <li><a href="/profile/">Snaps</a></li>
+          <li> <a class ="active" href="/profile/media/">Trophies</a></li>
+          
+        </ul>
+        
+    </div>
+    <div id="bt-portfoliovonegallery" class="bt-portfoliogallery">
+                                    {% for i in entries %}
+                                <div class="cbp-item">
+                                    <article class="bt-album">
+                                        <figure>
+                                            <img src="{{ i.image.url}}" alt="image description">
+                                            <figcaption>
+                                                <a class="bt-btnviewimg cbp-lightbox" href="{{ i.image.url}}" data-title="{{ i.image_id}}"></a>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>  
+                                {% endfor %}          
+    </div>
+
+
+    <div class="items row col-4"> 
+
+
+
+<script src="{% static 'js3/profile/jquery-1.11.3.min.js' %}"></script> 
+<script src="{% static 'js3/profile/bootstrap.min.js' %}"></script> 
+<script src="{% static 'js3/profile/own-menu.js' %}"></script> 
+<script src="{% static 'js3/profile/jquery.magnific-popup.min.js' %}"></script> 
+<script src="{% static 'js3/profile/jquery.isotope.min.js' %}"></script> 
+<script src="{% static 'js3/profile/owl.carousel.min.js' %}"></script> 
+<script src="{% static 'js3/profile/main.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+{% block script %}
+{% endblock %}

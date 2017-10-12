@@ -1,0 +1,378 @@
+[
+    {
+        "pattern": "center-select/get/", 
+        "app": "ajax-select", 
+        "kw_args": {
+            "name": "center-select"
+        }, 
+        "name": "center-select-select", 
+        "view": "django_helpers.widgets.ajax.ajax_select.render_select"
+    }, 
+    {
+        "pattern": "date-select/get/", 
+        "app": "ajax-select", 
+        "kw_args": {
+            "name": "date-select"
+        }, 
+        "name": "date-select-select", 
+        "view": "django_helpers.widgets.ajax.ajax_select.render_select"
+    }, 
+    {
+        "pattern": "doctor-select/get/", 
+        "app": "ajax-select", 
+        "kw_args": {
+            "name": "doctor-select"
+        }, 
+        "name": "doctor-select-select", 
+        "view": "django_helpers.widgets.ajax.ajax_select.render_select"
+    }, 
+    {
+        "pattern": "time-select/get/", 
+        "app": "ajax-select", 
+        "kw_args": {
+            "name": "time-select"
+        }, 
+        "name": "time-select-select", 
+        "view": "django_helpers.widgets.ajax.ajax_select.render_select"
+    }, 
+    {
+        "pattern": "auto-complete-patient-autocomplete/", 
+        "app": "auto-complete", 
+        "kw_args": {
+            "lookup": "auto-complete-patient-autocomplete"
+        }, 
+        "name": "auto-complete-patient-autocomplete", 
+        "view": "django_helpers.apps.autocomplete.views.autocomplete_lookup"
+    }, 
+    {
+        "pattern": "appointment-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "appointment-data-table"
+        }, 
+        "name": "appointment-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "appointment-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "appointment-data-table"
+        }, 
+        "name": "appointment-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "appointment-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "appointment-data-table"
+        }, 
+        "name": "appointment-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "category-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "category-data-table"
+        }, 
+        "name": "category-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "category-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "category-data-table"
+        }, 
+        "name": "category-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "category-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "category-data-table"
+        }, 
+        "name": "category-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "center-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "center-data-table"
+        }, 
+        "name": "center-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "center-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "center-data-table"
+        }, 
+        "name": "center-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "center-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "center-data-table"
+        }, 
+        "name": "center-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "date-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "date-data-table"
+        }, 
+        "name": "date-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "date-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "date-data-table"
+        }, 
+        "name": "date-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "date-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "date-data-table"
+        }, 
+        "name": "date-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "doctor-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "doctor-data-table"
+        }, 
+        "name": "doctor-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "doctor-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "doctor-data-table"
+        }, 
+        "name": "doctor-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "doctor-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "doctor-data-table"
+        }, 
+        "name": "doctor-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "email-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "email-data-table"
+        }, 
+        "name": "email-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "email-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "email-data-table"
+        }, 
+        "name": "email-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "email-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "email-data-table"
+        }, 
+        "name": "email-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "patient-collection-data-table/data/(?P<patient_id>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-collection-data-table"
+        }, 
+        "name": "patient-collection-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "patient-collection-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-collection-data-table"
+        }, 
+        "name": "patient-collection-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "patient-collection-data-table/save/(?P<patient_id>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-collection-data-table"
+        }, 
+        "name": "patient-collection-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "patient-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-data-table"
+        }, 
+        "name": "patient-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "patient-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-data-table"
+        }, 
+        "name": "patient-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "patient-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-data-table"
+        }, 
+        "name": "patient-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "patient-history-data-table/data/(?P<patient_id>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-history-data-table"
+        }, 
+        "name": "patient-history-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "patient-history-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-history-data-table"
+        }, 
+        "name": "patient-history-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "patient-history-data-table/save/(?P<patient_id>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "patient-history-data-table"
+        }, 
+        "name": "patient-history-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "schedule-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "schedule-data-table"
+        }, 
+        "name": "schedule-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "schedule-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "schedule-data-table"
+        }, 
+        "name": "schedule-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "schedule-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "schedule-data-table"
+        }, 
+        "name": "schedule-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "time-data-table/data/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "time-data-table"
+        }, 
+        "name": "time-data-table", 
+        "view": "django_helpers.apps.data_tables.views.get_data"
+    }, 
+    {
+        "pattern": "time-data-table/list/(?P<field_name>.+?)/(?P<pk>.+?)/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "time-data-table"
+        }, 
+        "name": "time-data-table-list", 
+        "view": "django_helpers.apps.data_tables.views.list_data"
+    }, 
+    {
+        "pattern": "time-data-table/save/", 
+        "app": "data-tables", 
+        "kw_args": {
+            "name": "time-data-table"
+        }, 
+        "name": "time-data-table-save", 
+        "view": "django_helpers.apps.data_tables.views.save"
+    }, 
+    {
+        "pattern": "validate-form/", 
+        "app": "form-renderer", 
+        "kw_args": null, 
+        "name": "validate-form", 
+        "view": "django_helpers.apps.form_renderer.preprocessors.validation.validate_form"
+    }, 
+    {
+        "pattern": "patient-history-listing/data/(?P<patient_id>.+?)/", 
+        "app": "listings", 
+        "kw_args": {
+            "name": "patient-history-listing"
+        }, 
+        "name": "patient-history-listing", 
+        "view": "django_helpers.apps.listings.views.get_data"
+    }, 
+    {
+        "pattern": "patient-history-listing/list/(?P<field_name>.+?)/(?P<patient_id>.+?)/(?P<pk>.+?)/", 
+        "app": "listings", 
+        "kw_args": {
+            "name": "patient-history-listing"
+        }, 
+        "name": "patient-history-listing-list", 
+        "view": "django_helpers.apps.listings.views.list_data"
+    }, 
+    {
+        "pattern": "patient-history-listing/save/(?P<patient_id>.+?)/", 
+        "app": "listings", 
+        "kw_args": {
+            "name": "patient-history-listing"
+        }, 
+        "name": "patient-history-listing-save", 
+        "view": "django_helpers.apps.listings.views.save"
+    }
+]

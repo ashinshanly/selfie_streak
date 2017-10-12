@@ -1,0 +1,153 @@
+{% extends 'based.html' %}
+{% load staticfiles %}
+{% block title %}About Us{% endblock %}
+{% block style %}
+	{% endblock %}
+	{% block about %}
+	<li class="bt-active bt-hasdropdown">
+		<a id="about" href="{% url 'about' %}">About Us</a>
+	</li>
+	{% endblock %}
+	{% block about1 %}
+	<li class="bt-active bt-hasdropdown">
+		<a id="about" href="{% url 'about' %}">About Us</a>
+	</li>
+	{% endblock %}
+{% block a %}
+	<!--************************************
+				Inner Page Banner Start
+		*************************************-->
+		<div class="bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight" data-vide-bg="poster: {% static 'images/license/photographer-journalist-working-studio-agency-PCXVKGV.jpg' %}" data-vide-options="position: 0% 50%">
+			<figure>
+				<figcaption>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="bt-innerbannercontent">
+									<h1>We are a Independent Digital Design<span>Studio Based in London</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figcaption>
+				<a id="bt-btnscrollto" class="bt-btnscrollto bt-btnscroll" href="#bt-main">scroll</a>
+			</figure>
+		</div>
+		<!--************************************
+				Inner Page Banner End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="bt-main" class="bt-main bt-haslayout">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div id="bt-content" class="bt-content">
+							<section class="bt-sectionspace bt-borderbottom bt-haslayout">
+								<div class="bt-feature bt-whychooseus">
+									<div class="bt-textbox">
+										<h2>Why Choose Us</h2>
+										<div class="bt-description">
+											<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+										</div>
+									</div>
+									<div class="bt-textbox">
+										<div class="bt-description">
+											<p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here, making it look like readable English There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="bt-sectionspace bt-haslayout">
+								<div class="bt-feature bt-philosophy">
+									<div class="bt-textbox">
+										<h2>Our Philosophy</h2>
+										<div class="bt-description">
+											<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected</p>
+										</div>
+									</div>
+									<div class="bt-textbox">
+										<div class="bt-description">
+											<p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here, making it look like readable English There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="bt-sectionspace bt-toppaddingzero bt-haslayout">
+								<div class="bt-members bt-membersv2">
+									<h2>Meet The New School<span>of Photography</span></h2>
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+											<div class="bt-member">
+												<figure><img src="{% static 'images/members/img-02.jpg' %}" alt="image description"></figure>
+												<div class="bt-membercontent">
+													<div class="bt-membername">
+														<h3>John Tony Thottan</h3>
+													</div>
+													<span class="bt-memberdesignation">Co-Founder &amp; CFO</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+											<div class="bt-member">
+												<figure><img src="{% static 'images/members/img-01.jpg' %}" alt="image description"></figure>
+												<div class="bt-membercontent">
+													<div class="bt-membername">
+														<h3>Ashin Shanly</h3>
+													</div>
+													<span class="bt-memberdesignation">Co-Founder &amp; CFO</span>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="bt-sectionpattren bt-haslayout"></div>
+							<section class="bt-sectionspace bt-haslayout">
+								<div class="bt-counters">
+									<div class="bt-counter">
+										<div class="bt-count">
+											<h3 data-from="0" data-to="3504" data-speed="8000" data-refresh-interval="50">3504</h3>
+										</div>
+										<div class="bt-countertitle">
+											<h3>This Week Clicks</h3>
+										</div>
+									</div>
+									<div class="bt-counter">
+										<div class="bt-count">
+											<h3 data-from="0" data-to="2" data-speed="8000" data-refresh-interval="50">02</h3>
+										</div>
+										<div class="bt-countertitle">
+											<h3>Lead Photography</h3>
+										</div>
+									</div>
+									<div class="bt-counter">
+										<div class="bt-count">
+											<h3 data-from="0" data-to="160" data-speed="8000" data-refresh-interval="50">160</h3>
+										</div>
+										<div class="bt-countertitle">
+											<h3>Over all Clients</h3>
+										</div>
+									</div>
+									<div class="bt-counter">
+										<div class="bt-count">
+											<h3 data-from="0" data-to="3" data-speed="8000" data-refresh-interval="50">03</h3>
+										</div>
+										<div class="bt-countertitle">
+											<h3>Locations</h3>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--************************************
+				Main End
+        *************************************-->
+        {% endblock %}

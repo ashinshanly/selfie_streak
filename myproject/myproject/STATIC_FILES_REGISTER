@@ -1,0 +1,1306 @@
+{
+    "boot-plus-cards": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "boot-plus-cards", 
+        "path": "bootplus/css/boot-plus-cards.css"
+    }, 
+    "bootbox-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootbox-js", 
+        "path": "js-plugins/bootstrap-bootbox/bootbox.min.js"
+    }, 
+    "bootcards-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootcards-css", 
+        "path": "bootcards/bootcards-desktop-lite.css"
+    }, 
+    "bootstrap-clock-picker-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-clock-picker-css", 
+        "path": "js-plugins/clock-picker/bootstrap-clockpicker.min.css"
+    }, 
+    "bootstrap-clock-picker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js", 
+            "django-helpers-forms-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-clock-picker-js", 
+        "path": "js-plugins/clock-picker/bootstrap-clockpicker.min.js"
+    }, 
+    "bootstrap-clockface-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-clockface-js", 
+        "path": "js/clockface.js"
+    }, 
+    "bootstrap-colorpicker-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-colorpicker-css", 
+        "path": "css/color-picker.css"
+    }, 
+    "bootstrap-colorpicker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-colorpicker-js", 
+        "path": "js/bootstrap-colorpicker.js"
+    }, 
+    "bootstrap-css-components-chat": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-css-components-chat", 
+        "path": "bootstrap-css-components/chat.css"
+    }, 
+    "bootstrap-css-components-time-line": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-css-components-time-line", 
+        "path": "bootstrap-css-components/time-line.css"
+    }, 
+    "bootstrap-datepicker-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-datepicker-css", 
+        "path": "jquery-plugins/bootstrap-datepicker/css/bootstrap-datepicker.css"
+    }, 
+    "bootstrap-datepicker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-datepicker-js", 
+        "path": "js/bootstrap-datepicker.js"
+    }, 
+    "bootstrap-daterangepicker-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-daterangepicker-css", 
+        "path": "jquery-plugins/daterange-picker/daterangepicker.css"
+    }, 
+    "bootstrap-daterangepicker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js", 
+            "moment-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-daterangepicker-js", 
+        "path": "jquery-plugins/daterange-picker/daterangepicker.js"
+    }, 
+    "bootstrap-datetimepicker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-datetimepicker-js", 
+        "path": "js/bootstrap-datetimepicker.js"
+    }, 
+    "bootstrap-multi-select-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-multi-select-css", 
+        "path": "css/bootstrap-multiselect.css"
+    }, 
+    "bootstrap-multiselect-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-multiselect-js", 
+        "path": "js/bootstrap-multiselect.js"
+    }, 
+    "bootstrap-responsive-border": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-responsive-border", 
+        "path": "bootstrap-css-components/responsive-border.css"
+    }, 
+    "bootstrap-responsive-margin": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-responsive-margin", 
+        "path": "bootstrap-css-components/responsive-margin.css"
+    }, 
+    "bootstrap-responsive-masonry": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-responsive-masonry", 
+        "path": "bootstrap-css-components/masonry-css.css"
+    }, 
+    "bootstrap-responsive-padding": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-responsive-padding", 
+        "path": "bootstrap-css-components/responsive-padding.css"
+    }, 
+    "bootstrap-row-eq-height": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-row-eq-height", 
+        "path": "bootstrap-css-components/row-eq-height.css"
+    }, 
+    "bootstrap-select-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-select-css", 
+        "path": "js-plugins/bootstrap-select/dist/css/bootstrap-select.min.css"
+    }, 
+    "bootstrap-select-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-select-js", 
+        "path": "js-plugins/bootstrap-select/dist/js/bootstrap-select.min.js"
+    }, 
+    "bootstrap-switch-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "bootstrap-switch-css", 
+        "path": "css/bootstrap3/bootstrap-switch.min.css"
+    }, 
+    "bootstrap-switch-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "bootstrap-switch-js", 
+        "path": "js/bootstrap-switch.min.js"
+    }, 
+    "bs3-form-validation-options-js": {
+        "dependancies": [
+            "jquery-validate-django-js"
+        ], 
+        "file_type": "js", 
+        "name": "bs3-form-validation-options-js", 
+        "path": "django-helpers/js/bs3-validation-options.js"
+    }, 
+    "c3-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "c3-css", 
+        "path": "cs-js/c3-0.4.14/c3.min.css"
+    }, 
+    "c3-django-js": {
+        "dependancies": [
+            "django-helpers-core-js", 
+            "c3-js"
+        ], 
+        "file_type": "js", 
+        "name": "c3-django-js", 
+        "path": "cs-js/django-c3.js"
+    }, 
+    "c3-js": {
+        "dependancies": [
+            "d3-js"
+        ], 
+        "file_type": "js", 
+        "name": "c3-js", 
+        "path": "cs-js/c3-0.4.14/c3.min.js"
+    }, 
+    "ck-editor-highlighter-monokai-theme": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "ck-editor-highlighter-monokai-theme", 
+        "path": "js-plugins/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css"
+    }, 
+    "ck-editor-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "ck-editor-js", 
+        "path": "js-plugins/ckeditor/ckeditor.js"
+    }, 
+    "d3-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "d3-js", 
+        "path": "cs-js/d3/d3.min.js"
+    }, 
+    "django-ck-editor-js": {
+        "dependancies": [
+            "jquery", 
+            "django-helpers-core-js", 
+            "ck-editor-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-ck-editor-js", 
+        "path": "js-plugins/ckeditor/django-ckeditor.js"
+    }, 
+    "django-data-table-js": {
+        "dependancies": [
+            "jquery-data-table-js", 
+            "django-helpers-core-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-data-table-js", 
+        "path": "js-plugins/jquery-data-tables/js/django.data-tables.js"
+    }, 
+    "django-form-toggles-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "django-form-toggles-js", 
+        "path": "form-renderer/js/toggles.js"
+    }, 
+    "django-helpers-confirm-bootbox-js": {
+        "dependancies": [
+            "django-helpers-core-js", 
+            "bootbox-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-confirm-bootbox-js", 
+        "path": "django-helpers/js/django-helpers-confirm-bootbox.js"
+    }, 
+    "django-helpers-core-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-core-js", 
+        "path": "django-helpers/js/core.js"
+    }, 
+    "django-helpers-forms-js": {
+        "dependancies": [
+            "django-helpers-core-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-forms-js", 
+        "path": "django-helpers/js/dh-forms.js"
+    }, 
+    "django-helpers-interactions-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-interactions-js", 
+        "path": "django-helpers/js/interactions.js"
+    }, 
+    "django-helpers-messages-bootbox-js": {
+        "dependancies": [
+            "django-helpers-core-js", 
+            "bootbox-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-messages-bootbox-js", 
+        "path": "django-helpers/js/django-helpers-messages-bootbox.js"
+    }, 
+    "django-helpers-messages-toastr-js": {
+        "dependancies": [
+            "django-helpers-core-js", 
+            "toastr-css", 
+            "toastr-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-messages-toastr-js", 
+        "path": "django-helpers/js/django-helpers-messages-toastr.js"
+    }, 
+    "django-helpers-modal-bootbox-js": {
+        "dependancies": [
+            "django-helpers-core-js", 
+            "bootbox-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-modal-bootbox-js", 
+        "path": "django-helpers/js/django-helpers-modal-bootbox.js"
+    }, 
+    "django-helpers-validate-js": {
+        "dependancies": [
+            "jquery-validate-django-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-helpers-validate-js", 
+        "path": "form-renderer/js/django-helpers-validate.js"
+    }, 
+    "django-jquery-autocomplete-js": {
+        "dependancies": [
+            "django-helpers-core-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-jquery-autocomplete-js", 
+        "path": "django-js-plugins/js/django.autocomplete.js"
+    }, 
+    "django-listing-js": {
+        "dependancies": [
+            "jquery", 
+            "django-helpers-core-js", 
+            "object-diff-js"
+        ], 
+        "file_type": "js", 
+        "name": "django-listing-js", 
+        "path": "js/listings/listings.js"
+    }, 
+    "django-xeditable-js": {
+        "dependancies": [
+            "jquery", 
+            "jquery-django-ajax-csrf", 
+            "xeditable-base"
+        ], 
+        "file_type": "js", 
+        "name": "django-xeditable-js", 
+        "path": "django-helpers/js/django.xeditable.js"
+    }, 
+    "eternicode-bootstrap-datepicker-js": {
+        "dependancies": [
+            "twitter-bootstrap-js"
+        ], 
+        "file_type": "js", 
+        "name": "eternicode-bootstrap-datepicker-js", 
+        "path": "jquery-plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"
+    }, 
+    "horizontal-columns-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "horizontal-columns-js", 
+        "path": "jquery-plugins/xeo-horizontal-columns/horizontal-columns.js"
+    }, 
+    "images-loaded-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "images-loaded-js", 
+        "path": "js-plugins/images-loaded/js/imagesloaded.pkgd.min.js"
+    }, 
+    "jquery": {
+        "dependancies": [
+            "jquery-1.9.1"
+        ], 
+        "file_type": "js", 
+        "name": "jquery", 
+        "path": null
+    }, 
+    "jquery-1.9.1": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "jquery-1.9.1", 
+        "path": "js/jquery-1.9.1.min.js"
+    }, 
+    "jquery-data-table-ajax-reload-js": {
+        "dependancies": [
+            "jquery-data-table-standing-draw-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-ajax-reload-js", 
+        "path": "js-plugins/jquery-data-tables/js/dataTable.ajax.reload.js"
+    }, 
+    "jquery-data-table-bootstrap-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-data-table-bootstrap-css", 
+        "path": "js-plugins/jquery-data-tables/css/DT_bootstrap.css"
+    }, 
+    "jquery-data-table-bootstrap-js": {
+        "dependancies": [
+            "jquery-data-table-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-bootstrap-js", 
+        "path": "js-plugins/jquery-data-tables/js/DT_bootstrap.js"
+    }, 
+    "jquery-data-table-col-reorder-css": {
+        "dependancies": [
+            "jquery-data-table-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-col-reorder-css", 
+        "path": "js-plugins/jquery-data-tables/plugins/col-reorder/js/ColReorder.min.js"
+    }, 
+    "jquery-data-table-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-data-table-css", 
+        "path": "js-plugins/jquery-data-tables/css/jquery.dataTables.css"
+    }, 
+    "jquery-data-table-js": {
+        "dependancies": [
+            "jquery", 
+            "jquery-django-ajax-csrf"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-js", 
+        "path": "js-plugins/jquery-data-tables/js/jquery-data-tables-min.1.9.4.js"
+    }, 
+    "jquery-data-table-scroller-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-data-table-scroller-css", 
+        "path": "js-plugins/jquery-data-tables/plugins/scroller/css/dataTables.scroller.css"
+    }, 
+    "jquery-data-table-scroller-js": {
+        "dependancies": [
+            "jquery-data-table-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-scroller-js", 
+        "path": "js-plugins/jquery-data-tables/js/dataTables.scroller.min.js"
+    }, 
+    "jquery-data-table-standing-draw-js": {
+        "dependancies": [
+            "jquery-data-table-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-data-table-standing-draw-js", 
+        "path": "js-plugins/jquery-data-tables/js/dataTable.standing-draw.js"
+    }, 
+    "jquery-django-ajax-csrf": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-django-ajax-csrf", 
+        "path": "django-helpers/js/django-ajax-csrf.js"
+    }, 
+    "jquery-easing": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-easing", 
+        "path": "js/jquery.easing.min.js"
+    }, 
+    "jquery-isotope-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-isotope-css", 
+        "path": "js-plugins/isotope/css/style.css"
+    }, 
+    "jquery-isotope-js": {
+        "dependancies": [
+            "jquery", 
+            "images-loaded-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-isotope-js", 
+        "path": "js-plugins/isotope/jquery.isotope.min.js"
+    }, 
+    "jquery-isotope-sloppy-masonry-js": {
+        "dependancies": [
+            "jquery-isotope-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-isotope-sloppy-masonry-js", 
+        "path": "js-plugins/isotope/jquery.isotope.sloppy-masonry.min.js"
+    }, 
+    "jquery-jeditable-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-jeditable-js", 
+        "path": "js/jquery.jeditable.js"
+    }, 
+    "jquery-masked-input-js": {
+        "dependancies": [
+            "jquery-ui-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-masked-input-js", 
+        "path": "django-helpers/forms/js/jquery.maskedinput-1.3.min.js"
+    }, 
+    "jquery-tipsy-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-tipsy-css", 
+        "path": "js-plugins/jquery-tipsy/tipsy.css"
+    }, 
+    "jquery-tipsy-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-tipsy-js", 
+        "path": "js-plugins/jquery-tipsy/jquery.tipsy.js"
+    }, 
+    "jquery-tokeninput-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-tokeninput-css", 
+        "path": "js-plugins/css/token-input.css"
+    }, 
+    "jquery-tokeninput-facebook-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-tokeninput-facebook-css", 
+        "path": "js-plugins/css/token-input-facebook.css"
+    }, 
+    "jquery-tokeninput-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-tokeninput-js", 
+        "path": "js-plugins/js/jquery.tokeninput.js"
+    }, 
+    "jquery-tokeninput-mac-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-tokeninput-mac-css", 
+        "path": "js-plugins/css/token-input-mac.css"
+    }, 
+    "jquery-typeahead-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-typeahead-css", 
+        "path": "js-plugins/css/typeahead.css"
+    }, 
+    "jquery-typeahead-js": {
+        "dependancies": [
+            "jquery", 
+            "jquery-typeahead-css"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-typeahead-js", 
+        "path": "js-plugins/js/typeahead.jquery.min.js"
+    }, 
+    "jquery-ui-base-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "jquery-ui-base-css", 
+        "path": "css/jquery-ui/jquery-ui.min.css"
+    }, 
+    "jquery-ui-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-ui-js", 
+        "path": "js/jquery-ui.js"
+    }, 
+    "jquery-ui-spinner-js": {
+        "dependancies": [
+            "jquery-ui-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-ui-spinner-js", 
+        "path": "django-helpers/forms/js/jquery-ui-spinner.js"
+    }, 
+    "jquery-validate-additional-methods-js": {
+        "dependancies": [
+            "jquery-validate-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-validate-additional-methods-js", 
+        "path": "form-renderer/js/additional-methods.js"
+    }, 
+    "jquery-validate-django-js": {
+        "dependancies": [
+            "jquery-validate-js", 
+            "sprintf-js"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-validate-django-js", 
+        "path": "form-renderer/js/jquery.validate.django.js"
+    }, 
+    "jquery-validate-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "jquery-validate-js", 
+        "path": "form-renderer/js/jquery.validate.js"
+    }, 
+    "light-box-2-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "light-box-2-css", 
+        "path": "jquery-plugins/light-box-2/css/lightbox.min.css"
+    }, 
+    "light-box-2-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "light-box-2-js", 
+        "path": "jquery-plugins/light-box-2/js/lightbox.min.js"
+    }, 
+    "material-forms-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "material-forms-css", 
+        "path": "material-forms/material-forms.css"
+    }, 
+    "material-forms-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "material-forms-js", 
+        "path": "material-forms/material-forms.js"
+    }, 
+    "medium-editor-beagle-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "medium-editor-beagle-css", 
+        "path": "js-plugins/medum-editor/css/themes/beagle.min.css"
+    }, 
+    "medium-editor-bootstrap-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "medium-editor-bootstrap-css", 
+        "path": "js-plugins/medum-editor/css/themes/bootstrap.min.css"
+    }, 
+    "medium-editor-button-js": {
+        "dependancies": [
+            "medium-editor-js"
+        ], 
+        "file_type": "js", 
+        "name": "medium-editor-button-js", 
+        "path": "js-plugins/medum-editor/js/medium-button.min.js"
+    }, 
+    "medium-editor-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "medium-editor-css", 
+        "path": "js-plugins/medum-editor/css/medium-editor.min.css"
+    }, 
+    "medium-editor-django-js": {
+        "dependancies": [
+            "jquery", 
+            "django-helpers-core-js", 
+            "medium-editor-js", 
+            "medium-editor-button-js"
+        ], 
+        "file_type": "js", 
+        "name": "medium-editor-django-js", 
+        "path": "js-plugins/medum-editor/js/django-medium.js"
+    }, 
+    "medium-editor-flat-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "medium-editor-flat-css", 
+        "path": "js-plugins/medum-editor/css/themes/flat.min.css"
+    }, 
+    "medium-editor-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "medium-editor-js", 
+        "path": "js-plugins/medum-editor/js/medium-editor.min.js"
+    }, 
+    "moment-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "moment-js", 
+        "path": "js/moment.min.js"
+    }, 
+    "object-diff-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "object-diff-js", 
+        "path": "js/listings/diff.min.js"
+    }, 
+    "perfect-scrollbar-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "perfect-scrollbar-css", 
+        "path": "jquery-plugins/perfect-scrollbar/perfect-scrollbar.min.css"
+    }, 
+    "perfect-scrollbar-django-js": {
+        "dependancies": [
+            "perfect-scrollbar-js"
+        ], 
+        "file_type": "js", 
+        "name": "perfect-scrollbar-django-js", 
+        "path": "jquery-plugins/perfect-scrollbar/perfect-scrollbar-django.min.js"
+    }, 
+    "perfect-scrollbar-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "perfect-scrollbar-js", 
+        "path": "jquery-plugins/perfect-scrollbar/perfect-scrollbar.min.js"
+    }, 
+    "poris-bootstrap-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-bootstrap-css", 
+        "path": "poris-theme/css/global/bootstrap.min.css"
+    }, 
+    "poris-bootstrap-dt-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-bootstrap-dt-css", 
+        "path": "poris-theme/css/datatable/dataTables.bootstrap.min.css"
+    }, 
+    "poris-bootstrap-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-bootstrap-js", 
+        "path": "poris-theme/js/global/bootstrap.min.js"
+    }, 
+    "poris-custom-main-theme.css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-custom-main-theme.css", 
+        "path": "css/poris-custom-main-theme.css"
+    }, 
+    "poris-custom-side-menu-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-custom-side-menu-js", 
+        "path": "poris-theme/js/custom/custom-side-menu.js"
+    }, 
+    "poris-dashboard-1": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-dashboard-1", 
+        "path": "poris-theme/css/dashboard/dashboard.css"
+    }, 
+    "poris-dashboard-2": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-dashboard-2", 
+        "path": "poris-theme/css/dashboard/dashboard_v2.css"
+    }, 
+    "poris-dashboard-3": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-dashboard-3", 
+        "path": "poris-theme/css/dashboard/dashboard_v3.css"
+    }, 
+    "poris-default-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-default-css", 
+        "path": "poris-theme/css/colors/colors.css"
+    }, 
+    "poris-federal-style-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-federal-style-css", 
+        "path": "poris-theme/css/federal-bank.css"
+    }, 
+    "poris-font-awesome-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-font-awesome-css", 
+        "path": "poris-theme/fonts/font-awasome/font-awesome.min.css"
+    }, 
+    "poris-iconstyle-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-iconstyle-css", 
+        "path": "poris-theme/css/global/iconstyle.css"
+    }, 
+    "poris-jQuery-switchery-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-jQuery-switchery-js", 
+        "path": "poris-theme/js/switchery/jQuery.switchery.min.js"
+    }, 
+    "poris-jquery-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "poris-jquery-js", 
+        "path": "poris-theme/js/global/jquery.min.js"
+    }, 
+    "poris-jquery-slidePanel-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-jquery-slidePanel-js", 
+        "path": "poris-theme/js/home-page/jquery-slidePanel.min.js"
+    }, 
+    "poris-js": {
+        "dependancies": [
+            "jquery", 
+            "twitter-bootstrap-js", 
+            "poris-waves-js", 
+            "poris-jquery-slidePanel-js", 
+            "poris-sidebar-js", 
+            "poris-custom-side-menu-js"
+        ], 
+        "file_type": "js", 
+        "name": "poris-js", 
+        "path": "poris-theme/js/global/site.min.js"
+    }, 
+    "poris-responsive-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-responsive-css", 
+        "path": "poris-theme/css/global/responsive.css"
+    }, 
+    "poris-screenfull-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-screenfull-js", 
+        "path": "poris-theme/js/full-screen-page/screenfull.min.js"
+    }, 
+    "poris-sidebar-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-sidebar-js", 
+        "path": "poris-theme/js/home-page/sidebar.min.js"
+    }, 
+    "poris-site-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-site-css", 
+        "path": "poris-theme/css/global/site.min.css"
+    }, 
+    "poris-site-settings-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-site-settings-js", 
+        "path": "poris-theme/js/sitesettings/site-settings.js"
+    }, 
+    "poris-slidePanel-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-slidePanel-css", 
+        "path": "poris-theme/css/global/slidePanel.min.css"
+    }, 
+    "poris-style-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-style-css", 
+        "path": "poris-theme/css/global/style.css"
+    }, 
+    "poris-switchery-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-switchery-css", 
+        "path": "poris-theme/css/switchery/switchery.min.css"
+    }, 
+    "poris-waves-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-waves-css", 
+        "path": "poris-theme/css/global/waves.min.css"
+    }, 
+    "poris-waves-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "poris-waves-js", 
+        "path": "poris-theme/js/global/waves.min.js"
+    }, 
+    "poris-xeoscript-addons": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "poris-xeoscript-addons", 
+        "path": "poris-theme/css/global/custom.css"
+    }, 
+    "prettify-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "prettify-js", 
+        "path": "js/prettify.min.js"
+    }, 
+    "responsive-tabs-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "responsive-tabs-css", 
+        "path": "jquery-plugins/responsive-tabs/responsive-tabs.css"
+    }, 
+    "responsive-tabs-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "responsive-tabs-js", 
+        "path": "jquery-plugins/responsive-tabs/jquery.responsiveTabs.min.js"
+    }, 
+    "select-2-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "select-2-css", 
+        "path": "js-plugins/select2/dist/css/select2.min.css"
+    }, 
+    "select-2-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "select-2-js", 
+        "path": "js-plugins/select2/dist/js/select2.min.js"
+    }, 
+    "slick-nav-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "slick-nav-css", 
+        "path": "jquery-plugins/SlickNav/dist/slicknav.min.css"
+    }, 
+    "slick-nav-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "slick-nav-js", 
+        "path": "jquery-plugins/SlickNav/dist/jquery.slicknav.min.js"
+    }, 
+    "sprintf-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "sprintf-js", 
+        "path": "form-renderer/js/sprintf.min.js"
+    }, 
+    "superfish-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "superfish-js", 
+        "path": "js/superfish.min.js"
+    }, 
+    "swig-js": {
+        "dependancies": null, 
+        "file_type": "js", 
+        "name": "swig-js", 
+        "path": "js/swig.min.js"
+    }, 
+    "toastr-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "toastr-css", 
+        "path": "js-plugins/toastr/toastr.css"
+    }, 
+    "toastr-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "toastr-js", 
+        "path": "js-plugins/toastr/toastr.js"
+    }, 
+    "trumbowyg-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "trumbowyg-css", 
+        "path": "js-plugins/trumbowyg/dist/ui/trumbowyg.min.css"
+    }, 
+    "trumbowyg-django-js": {
+        "dependancies": [
+            "jquery", 
+            "trumbowyg-js"
+        ], 
+        "file_type": "js", 
+        "name": "trumbowyg-django-js", 
+        "path": "js-plugins/trumbowyg/trumbowyg.django.min.js"
+    }, 
+    "trumbowyg-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "trumbowyg-js", 
+        "path": "js-plugins/trumbowyg/dist/trumbowyg.min.js"
+    }, 
+    "twitter-bootstrap-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "twitter-bootstrap-css", 
+        "path": "jquery-plugins/bootstrap/css/bootstrap.min.css"
+    }, 
+    "twitter-bootstrap-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "twitter-bootstrap-js", 
+        "path": "jquery-plugins/bootstrap/js/bootstrap.min.js"
+    }, 
+    "twitter-bootstrap-theme": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "twitter-bootstrap-theme", 
+        "path": "jquery-plugins/bootstrap/css/bootstrap-theme.min.css"
+    }, 
+    "xeditable-base": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-editable-form-js", 
+            "xeditable-editable-form-utils-js", 
+            "xeditable-editable-container-js", 
+            "xeditable-editable-inline-js", 
+            "xeditable-editable-element-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-base", 
+        "path": null
+    }, 
+    "xeditable-bootstrap-base": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js", 
+            "xeditable-editable-form-bootstrap-js", 
+            "xeditable-editable-popover-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-bootstrap-base", 
+        "path": null
+    }, 
+    "xeditable-bootstrap3-base": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js", 
+            "xeditable-editable-form-bootstrap3-js", 
+            "xeditable-editable-popover3-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-bootstrap3-base", 
+        "path": null
+    }, 
+    "xeditable-editable-container-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "xeditable-editable-container-css", 
+        "path": "js-plugins/x-editable-1.5.1/src/containers/editable-container.css"
+    }, 
+    "xeditable-editable-container-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-editable-container-css"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-container-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/containers/editable-container.js"
+    }, 
+    "xeditable-editable-element-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "xeditable-editable-element-css", 
+        "path": "js-plugins/x-editable-1.5.1/src/element/editable-element.css"
+    }, 
+    "xeditable-editable-element-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-element-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/element/editable-element.js"
+    }, 
+    "xeditable-editable-form-bootstrap-js": {
+        "dependancies": [
+            "jquery", 
+            "twitter-bootstrap-js", 
+            "twitter-bootstrap-css", 
+            "xeditable-base"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-form-bootstrap-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/editable-form/editable-form-bootstrap.js"
+    }, 
+    "xeditable-editable-form-bootstrap3-js": {
+        "dependancies": [
+            "jquery", 
+            "twitter-bootstrap-js", 
+            "twitter-bootstrap-css"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-form-bootstrap3-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/editable-form/editable-form-bootstrap3.js"
+    }, 
+    "xeditable-editable-form-css": {
+        "dependancies": null, 
+        "file_type": "css", 
+        "name": "xeditable-editable-form-css", 
+        "path": "js-plugins/x-editable-1.5.1/src/editable-form/editable-form.css"
+    }, 
+    "xeditable-editable-form-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-editable-form-css"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-form-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/editable-form/editable-form.js"
+    }, 
+    "xeditable-editable-form-utils-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-form-utils-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/editable-form/editable-form-utils.js"
+    }, 
+    "xeditable-editable-inline-js": {
+        "dependancies": [
+            "jquery"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-inline-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/containers/editable-inline.js"
+    }, 
+    "xeditable-editable-popover-js": {
+        "dependancies": [
+            "jquery", 
+            "twitter-bootstrap-js", 
+            "twitter-bootstrap-css", 
+            "xeditable-base"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-popover-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/containers/editable-popover.js"
+    }, 
+    "xeditable-editable-popover3-js": {
+        "dependancies": [
+            "jquery", 
+            "twitter-bootstrap-js", 
+            "twitter-bootstrap-css"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-editable-popover3-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/containers/editable-popover3.js"
+    }, 
+    "xeditable-input-abstract-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-base", 
+            "xeditable-editable-element-css"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-abstract-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/abstract.js"
+    }, 
+    "xeditable-input-checklist-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-checklist-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/checklist.js"
+    }, 
+    "xeditable-input-combodate-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-combodate-lib-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-combodate-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/combodate/combodate.js"
+    }, 
+    "xeditable-input-combodate-lib-js": {
+        "dependancies": [
+            "jquery", 
+            "moment-js", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-combodate-lib-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/combodate/lib/combodate.js"
+    }, 
+    "xeditable-input-date-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-date-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/date/date.js"
+    }, 
+    "xeditable-input-datefield-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-datefield-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/date/datefield.js"
+    }, 
+    "xeditable-input-datetime-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-datetime-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/datetime/datetime.js"
+    }, 
+    "xeditable-input-datetimefield-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-datetimefield-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/datetime/datetimefield.js"
+    }, 
+    "xeditable-input-html5types-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-html5types-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/html5types.js"
+    }, 
+    "xeditable-input-list-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-list-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/list.js"
+    }, 
+    "xeditable-input-select-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-list-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-select-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/select.js"
+    }, 
+    "xeditable-input-select2-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-select2-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/select2/select2.js"
+    }, 
+    "xeditable-input-text-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-text-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/text.js"
+    }, 
+    "xeditable-input-textarea-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-text-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-textarea-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/textarea.js"
+    }, 
+    "xeditable-input-typeahead-js": {
+        "dependancies": [
+            "jquery", 
+            "xeditable-input-abstract-js"
+        ], 
+        "file_type": "js", 
+        "name": "xeditable-input-typeahead-js", 
+        "path": "js-plugins/x-editable-1.5.1/src/inputs/typeahead.js"
+    }
+}

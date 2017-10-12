@@ -1,0 +1,188 @@
+{% extends "based.html" %}
+{% load staticfiles%}
+<!DOCTYPE HTML>
+{% block home1 %}
+<li class="bt-active bt-hasdropdown">
+  <a id="home" href="{% url 'home' %}">Home</a>
+</li>
+{% endblock %}
+{% block home %}
+<li class="bt-active bt-hasdropdown">
+  <a  href="{% url 'home' %}">Home</a>
+</li>
+{% endblock %}
+{% block a %}
+<html>
+<head>
+
+
+<!--<script type="text/javascript" src="{% static 'js3/particles.js' %}"></script>-->
+<script type="text/javascript" src="{% static 'js3/particles.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js3/selfiestreak.js' %}"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SoonX</title>
+
+<link rel="icon" type="image/png" href="{% static 'images/ban3.jpg' %}">
+
+<!--<link href="{% static 'css3/media.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css3/soonx.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<link rel="stylesheet" media="screen" href="{% static 'css3/style3.css' %}">
+
+<link href="{% static 'css3/style3.css ' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css3/main.css ' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css3/selfiestreak.css ' %}" rel='stylesheet' type='text/css' />
+
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+</head>
+<body>
+
+
+
+<!--<body class="space">
+
+
+
+<!- started id wrap  ->
+
+<div id="wrap"> 
+
+  <!-starts logo div ->
+  <br>
+          
+  <div class="logo">
+    <div class="container"> <a href="#."><img src="{% static 'images/bgcamera2.png' %}" alt="SoonX logo" /></a> </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!-ended logo div ->
+  
+  <div class="clear"></div>
+  
+  <!- starts counter ->
+  
+  <div class="counter spacecounter">
+    <div class="container">
+      
+      <div class="spacenotify mid">
+        <h1>-Selfie_Streak-</h1>
+          <div class="field">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br><br>
+          <br>
+          <br><br>
+          <br>
+          <br>
+        
+          
+     </div>
+     <div class="clear"></div>
+     <div class="spacesocial">
+        <ul>
+          <li><a href="#." class="fa fb"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#." class="fa tw"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#." class="fa in"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#." class="fa gp"><i class="fa fa-google"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!- end counter ->
+  <div class="clear"></div>
+  
+  <!- start footer ->
+  
+  <div class="spacefooter">
+    <div class="container">
+      <p>Copyrights © 2016 SoonX - All Rights Reserved.</p>  
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!-end footer -> 
+  
+</div> -->
+
+
+
+<!-- count particles -->
+
+
+
+<!-- particles.js container --><main id="bt-main" class="bt-main bt-haslayout">
+<div id="particles-js"  style="text-align:center;">
+
+
+
+
+
+
+
+
+
+<!-- scripts -->
+<script src="{% static 'js3/particles.js' %}"></script>
+<script src="{% static 'js3/app.js' %}"></script>
+
+<!-- stats.js ->
+<script src="{% static 'js3/lib/stats.js' %}"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+
+</script>-->
+
+
+
+
+<div class="bt-header bt-headervfour bt-headerinnerpage bt-headerinnerpagev1 bt-haslayout" style=" font-size: 10em; width: wrap; height: wrap; position: absolute; left: 58%; top: 55%; transform: translateX(-50%) translateY(-50%); margin-top: -100px; margin-left: -100px; color: white; opacity: 0.5;"><center>Selfie Streak</center><a href="events" class="button" style="color: white; font-size: 35px; opacity: 0.5; border: 2px solid white;
+ border-radius: 15px; padding: 5px; margin-top: 35em;">Get Started</a>
+           </div>
+          </main>
+
+
+
+
+   
+     
+
+
+
+
+
+
+
+  </div>
+ 
+
+
+
+
+</body>
+</html>
+{% endblock %}

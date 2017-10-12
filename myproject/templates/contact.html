@@ -1,0 +1,108 @@
+{% extends "based.html" %}
+{% load staticfiles %}
+{% block title %}Contact Us{% endblock %}
+{% block header %}
+<header id="bt-header" class="bt-header bt-headervfour bt-haslayout">
+        <div class="container-fluid">
+            <div class="row">
+{% endblock %}
+
+
+{% block logo %}<img src="{% static 'images/blacklogo.png' %}" alt="image description">{% endblock %}
+{% block icon %}
+<li><a class="bt-btntogglemenu" href="javascript:void(0);"><img src="{% static 'images/icons/icon-04.png' %}" alt="image description"></a></li>
+{% endblock %} 
+{% block contact1 %}
+<li class="bt-active bt-hasdropdown">
+	<a id="contact" href="{% url 'contact' %}">Contact Us</a>
+</li>
+{% endblock %}
+{% block contact %}
+<li class="bt-active bt-hasdropdown">
+	<a id="contact" href="{% url 'contact' %}">Contact Us</a>
+</li>
+{% endblock %}
+{% block a %}
+
+    <!-- Banners -->
+    <main id="bt-main" class="bt-main bt-fullheight bt-haslayout">
+			<div class="container-fluid  bt-fullheight">
+				<div class="row  bt-fullheight">
+					<div id="bt-content" class="bt-content bt-fullheight">
+						<div id="bt-locationmap" class="bt-locationmap">
+							<iframe height="100%" width="100%" frameborder="0" style="border:0;margin-top:70px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJn42ap4XvpzsRHkZFMP-YO4Y&key=AIzaSyA7UoMzqeCFCP9F7frh0bubz6lpTIeHzyM" allowfullscreen ></iframe>							
+						</div>
+						<div class="bt-contactus bt-contactusvone">
+							<div class="bt-addresses">
+								<div class="bt-address">
+									<h2>Ashin Shanly</h2>
+									<ul>
+										<li><address>,Thrissur,Kerala,India/address></li>
+										<li><span>7221 654 321 99 (+1)</span></li>
+										<li><a href="mailto:tasver@info.com">tasver@info.com</a></li>
+									</ul>
+								</div>
+								<div class="bt-address">
+									<h2>John Tony</h2>
+									<ul>
+										<li><address>Thottan House,Kottapadam,Thrissur,Kerala,India</address></li>
+										<li><span>9495 85 61 34 (+91)</span></li>
+										<li>thottanjohn@gmail.com</li>
+									</ul>
+								</div>
+							</div>
+							<div class="bt-followus">
+								<span>follow us</span>
+								<ul class="bt-socialicons">
+									<li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+							<div class="bt-getintouch">
+								<h2>Get in Touch</h2>
+								<form class="bt-formtheme bt-formcontactus" method="post">
+                                    	{% csrf_token %}
+									<fieldset>
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+												<div class="form-group">
+													<input type="text" name="full_name" required id="id_full_name" class="form-control" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+												<div class="form-group">
+													<input style="text-transform: lowercase;" type="email" required id="id_email"  name="email" class="form-control" placeholder="Email Address">
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="form-group">
+													<textarea name="message"  class="form-control" placeholder="Message" required></textarea>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<button class="bt-btn bt-btnblack" type="submit"><span>SEND</span></button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<span class="bt-copyright">Copyrights 2017 Tasver. All rights reserved</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+        {% endblock %}
+	{% block newsletter %}
+    {% endblock %}
+    {% block footer %}
+	{% endblock %}
+
+    <!--************************************
+        Footer End
+
+<!--************************************
+        Wrapper End -->
+     

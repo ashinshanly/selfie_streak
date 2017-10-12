@@ -1,0 +1,125 @@
+{% extends "based.html" %}
+{% load staticfiles %}
+{% block title %}Sign Up{% endblock %}
+{% block style %}
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Branded Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="{% static 'css3/stylem.css' %}" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="{% static 'css3/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <style type="text/css">
+   
+  input[type="text"],input[type="email"]
+   {
+     text-transform: lowercase;
+	 }
+	 .bt-newsletter,.bt-instagramgallery
+{
+    margin-top: 20em;
+}
+   label{
+     margin-top:.5em; 
+     color: white;
+	 }
+	 body{
+    text-align: center;
+	font-family: 'Roboto', sans-serif;
+    background:url("{% static 'images/1.jpg' %}")no-repeat 0px 0px;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover;  
+	background-size:cover; 
+	min-height:700px;
+    }
+
+   </style>
+<!-- //online-fonts -->
+{% endblock %}
+{% block signup1 %}
+<li class="bt-active bt-hasdropdown">
+	<a id="signup" href="{% url 'register:registration_register' %}">SignUp</a>
+</li>
+{% endblock %}
+{% block signup %}
+<li class="bt-active bt-hasdropdown">
+	<a id="signup" href="{% url 'register:registration_register' %}">SignUp</a>
+</li>
+{% endblock %}
+{% block a %}
+<main id="bt-main" class="bt-main bt-haslayout">
+<div class="w3-agile-banner">
+	<div class="center-container">
+		<!--header-->
+		<div class="header-w3l">
+            <br><br><br>
+		</div>
+		<!--//header-->
+		<!--main-->
+		<div class="main-content-agile">
+			<div class="wthree-pro">
+				<h2>SignUp Now</h2>
+			</div>
+					<div class="social_icons">
+						<!-- Facebook -->
+						<div class="slide-social w3l">
+						<a href="{% url 'social:begin' 'facebook' %}">
+							<div class="button">Facebook</div>
+							<div class="facebook icon"> <i class="facebook"></i> </div>
+							<div class="facebook slide">
+								<p>Facebook</p>
+							</div>
+							<div class="clear"></div>
+							</a>
+						</div>
+						<!-- Twitter -->
+						<div class="slide-social w3l">
+						<a href="{% url 'social:begin' 'twitter' %}">
+							<div class="button">Twitter</div>
+							
+							<div class="twitter icon"> <i class="twitter"></i></div>
+							<div class="twitter slide">
+								<p>Twitter</p>
+							</div>
+							<div class="clear"></div>
+							</a> 
+						</div>
+			<div class="sub-main-w3">	
+  
+  <form method="post" action=".">
+    {% csrf_token %}
+      {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="display: none">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+      {% endfor %}
+    <input type="submit" value="Sign up">
+  </form>
+  		</div>
+		</div>
+		<!--//main-->
+		<!--footer-->
+		<!--//footer-->
+	</div>
+</div></main>
+{% endblock %}
+
+
+
+  
+
+
