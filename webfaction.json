@@ -1,5 +1,5 @@
 {
     "source" : "myproject",
-    "application" : "fed_payments_merchant_dashboard_app",
+    "application" : "selfie_streak_app",
     "pull" : true
 }
