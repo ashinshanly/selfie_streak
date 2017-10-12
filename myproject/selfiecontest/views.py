@@ -18,7 +18,7 @@ from django.shortcuts import render_to_response
 # Create your views here.
 def home(request):
     title="welcome %s"%request.user
-    return render(request,'index1.html')
+    return render(request,'index.html')
 """class EntryCreate(CreateView):
             model=Picto
             form_class=Picto

@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # third party apps
-    # 'sorl.thumbnail',
-    # 'crispy_forms',
-    'social_django',
+    #'social_django',
     'selfiecontest',
 ]
 
@@ -88,16 +86,16 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
+                #'social_django.context_processors.backends',
+                #'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.twitter.TwitterOAuth',
-    'social_core.backends.facebook.FacebookOAuth2',
+    #'social_core.backends.github.GithubOAuth2',
+    #'social_core.backends.twitter.TwitterOAuth',
+    #'social_core.backends.facebook.FacebookOAuth2',
     
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -151,7 +149,6 @@ STATICFILES_DIRS = (
 
 #
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -162,11 +159,13 @@ EMAIL_PORT = 587
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
 SITE_ID = 1
-LOGIN_REDIRECT_URL = "/"
 
+LOGIN_REDIRECT_URL = "/"
+"""
 SOCIAL_AUTH_TWITTER_KEY = '9ao6C646gtHbjTCONTMTDorga'
 
 SOCIAL_AUTH_TWITTER_SECRET = 'lYtoolx8WVGS75YqLzxxBCJPzUPo9QcEtpMketOoc7PXYEqCbL'
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '722048099772-lk76rle6r92cas9o7ck43c03vsdlghlq.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Qpr8qAT71eS6Ydxningweqih'
+"""

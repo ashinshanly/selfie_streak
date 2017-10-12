@@ -5,7 +5,7 @@ from base_settings import *
 ADMINS = (
     ('Muhammed K K', 'ajumell@xeoscript.com'),
     ('John Tony Thottan', 'thottanjohn@gmail.com'),
-    ('Ashin Shanly', 'ashinshanly@gmail.com')
+    ('Ashin Shanly', 'ashin@gmail.com')
 )
 
 MANAGERS = ADMINS

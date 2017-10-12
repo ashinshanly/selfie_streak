@@ -26,7 +26,7 @@ admin.autodiscover()
 
 
 urlpatterns = [
-    url(r'^oauth/', include('social_django.urls', namespace='social')),
+    #url(r'^oauth/', include('social_django.urls', namespace='social')),
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.home,name="home"),
     url(r'^about/$',views.about,name="about"),  
