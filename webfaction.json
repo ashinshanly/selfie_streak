@@ -1,0 +1,5 @@
+{
+    "source" : "myproject",
+    "application" : "fed_payments_merchant_dashboard_app",
+    "pull" : true
+}
