@@ -9,6 +9,10 @@
       {
           margin-top: 20em;
       }
+      .modal{
+          z-index: 100000;
+      }
+
       </style>
     
     {% endblock %}
@@ -52,7 +56,7 @@
                         </center>
         <div id="bt-threecolumnscubevonegallery" class="bt-photogallery bt-photogallerythreecolumns bt-threecolumnscubegallery cbp">
             <div class="wpb_column vc_column_container vc_col-sm-12">
-                    {% for i in pro reversed %}
+                    {% for i in pro %}
                         <div class="cbp-item">
                             <article class="bt-album">
                                 <figure>
@@ -63,7 +67,7 @@
                                     <figcaption>
                                         <div class="bt-titleandinfo">
                                             <div class="bt-albumtitle">
-                                                    <h3><a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
+                                                    <h3 ><a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
                                             </div>
                                             <ul class="bt-shareandlikes">
                                                 <li>
@@ -73,8 +77,8 @@
                                                         
                                                     </div>
                                                     <a class="bt-btnshare" href="javascript:void(0);">
-                                                        <span class="icon-share4"></span>
-                                                        <span>Share</span>
+                                                        <span class="icon-share4" ></span>
+                                                        <span   >Share</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -90,7 +94,7 @@
                                                </li>
                                                 <li>
                                                     <span>
-                                                        <div id="{{i.image_id}}">
+                                                        <div id="{{i.image_id}}" >
                                                         {{i.like}}
                                                         </div>
                                                     </span>
@@ -207,10 +211,10 @@ $('i.likes').click(function(){
   <div class="modal-content">
 
 {% for i in pro %}
-    <div class="mySlides">
+    <div class="mySlides" >
       <div class="numbertext"></div>
       <img class="boximage" src="{{i.image.url}}" style="width:100%">
-      <center> <h2 class="caption">{{i.image_caption}}</h2></center>
+      <center> <h2 >{{i.image_caption}}</h2></center>
     </div>
     {% endfor %}
 
@@ -224,7 +228,7 @@ $('i.likes').click(function(){
 
 {% for i in pro %}
     <div class="column">
-      <img class="demo cursor" src="{{i.image.url}}" style="width:100%" onclick="currentSlide('{{forloop.counter}}')" alt="{{i.user}}">
+      <img class="demo cursor" src="{{i.image.url}}" style="width:100%" onclick="currentSlide('{{i.count}}-{{forloop.counter}}')" alt="{{i.user}}">
     </div>
         {% endfor %}
   </div>

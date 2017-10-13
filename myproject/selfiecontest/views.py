@@ -13,6 +13,8 @@ from django.http import Http404,HttpResponse,HttpResponseRedirect,HttpResponsePe
 from django.db import transaction
 from django.template import RequestContext
 from django.shortcuts import render_to_response
+from django.core.mail import EmailMessage
+
    
 
 # Create your views here.
@@ -177,17 +179,22 @@ def alt_profile(request,profile_id):
         return render(request, 'altprofile1.html', args)
 @login_required
 def contact(request):
-    form = ContactForm(request.POST)
-    if form.is_valid():
-        form_mail = form.cleaned_data.get("email")
-        form_message = form.cleaned_data.get("message")
-        form_full_name = form.cleaned_data.get("full_name")
-        subject = 'site contact form'
-        from_email = form_mail
-        to_email = [settings.EMAIL_HOST_USER, ]
-        contact_message = form_message
-        send_mail(subject, contact_message, from_email, to_email, fail_silently=True)
+    if request.method == 'POST':
+        form = ContactForm(request.POST) 
+        if form.is_valid():
+            form_mail = form.cleaned_data.get("email")
+            form_message = form.cleaned_data.get("message")
+            form_full_name = form.cleaned_data.get("full_name")
+            subject = 'site contact form'
+            from_email = form_mail
+            to_email = [settings.EMAIL_HOST_USER, ]
+            contact_message = form_message
+            email = EmailMessage(subject=subject,body="from:"+from_email+'\n'+contact_message,from_email=from_email,to=to_email)
+            email.send()
+            email = None
+    else:
+        form=ContactForm()
     context = {
         'forms': form
-    }
+          }  
     return render(request, 'contact.html',context)
