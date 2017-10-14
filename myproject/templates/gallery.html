@@ -30,7 +30,7 @@
     {% block a %}
          {% csrf_token %}
             <div class="bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight">
-                <figure class="bt-fullheight" data-vide-bg="poster:{% static 'images/bg/banner-01' %}" data-vide-options="position: 0% 50%">
+                <figure class="bt-fullheight" data-vide-bg="poster:{% static 'images/license/green-landscape-on-the-isle-of-skye-PUSYAHG' %}" data-vide-options="position: 0% 50%">
                     <figcaption>
                         <div class="container" style="width:auto;">
                             <div class="row">
@@ -106,7 +106,9 @@
                                 </figure>
                             </article>
                         </div>
+
                      {% endfor %}
+
                          <!--
               <div class="vc_column-inner ">
                   <div class="wpb_wrapper">
@@ -166,8 +168,18 @@
                 </div>
             </div>
         </div>-->
+  
         </div>
+         
     </div>
+    
+    </main>
+    <main id="bt-main" class="bt-main bt-haslayout">
+        <center>
+            <div class="head">
+                <a style="color:white" href="{% url 'addentry' %}"> Enter</a>
+            </div>
+        </center>
 </main>
 {% endblock %}
 {% block newsletter %}
