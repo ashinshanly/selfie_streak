@@ -68,17 +68,17 @@
 										<div class="row">
 											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 												<div class="form-group">
-													<input type="text" name="full_name" required id="id_full_name" class="form-control" placeholder="Name">
+														<input style="text-transform: lowercase;" type="email" required id="id_from_email"  name="from_email" class="form-control" placeholder="Email Address">
 												</div>
 											</div>
 											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 												<div class="form-group">
-													<input style="text-transform: lowercase;" type="email" required id="id_email"  name="email" class="form-control" placeholder="Email Address">
+														<input type="text" name="subject" required id="id_subject" class="form-control" placeholder="Subject" />
 												</div>
 											</div>
 											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 												<div class="form-group">
-													<textarea name="message"  class="form-control" placeholder="Message" required></textarea>
+													<textarea name="message" id="id_message"  class="form-control" placeholder="Message" required></textarea>
 												</div>
 											</div>
 											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -99,7 +99,7 @@
     {% endblock %}
     {% block footer %}
 	{% endblock %}
-
+	
     <!--************************************
         Footer End
 

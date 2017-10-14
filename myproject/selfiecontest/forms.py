@@ -6,15 +6,10 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django import forms
 
 class ContactForm(forms.Form):
-    full_name=forms.CharField()
-    email=forms.EmailField()
-    message=forms.CharField(widget=forms.Textarea)
-    def clean_email(self):
-        email = self.cleaned_data.get('email')
-        return email
-
-
-
+    from_email = forms.EmailField(required=True)
+    subject = forms.CharField(required=True)
+    message = forms.CharField(widget=forms.Textarea, required=True)
+    
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile

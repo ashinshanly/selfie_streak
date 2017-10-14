@@ -179,22 +179,17 @@ def alt_profile(request,profile_id):
         return render(request, 'altprofile1.html', args)
 @login_required
 def contact(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST) 
-        if form.is_valid():
-            form_mail = form.cleaned_data.get("email")
-            form_message = form.cleaned_data.get("message")
-            form_full_name = form.cleaned_data.get("full_name")
-            subject = 'site contact form'
-            from_email = form_mail
-            to_email = [settings.EMAIL_HOST_USER, ]
-            contact_message = form_message
-            email = EmailMessage(subject=subject,body="from:"+from_email+'\n'+contact_message,from_email=from_email,to=to_email)
-            email.send()
-            email = None
+    if request.method == 'GET':
+        form = ContactForm()
     else:
-        form=ContactForm()
-    context = {
-        'forms': form
-          }  
-    return render(request, 'contact.html',context)
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject,"from: "+from_email+"\n"+message, from_email, ['thottanjohn@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('contact')
+    return render(request, "contact.html", {'form': form})
