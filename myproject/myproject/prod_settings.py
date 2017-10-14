@@ -21,7 +21,7 @@ ALLOWED_HOSTS = [
 
 HOME_FOLDER = os.path.join('/', 'home', 'ajumell')
 
-STATIC_ROOT = 'home/ajumell/webapps/selfie_streak_static'
+STATIC_ROOT = '/home/ajumell/webapps/selfie_streak_static'
 
 STATIC_URL = '/static/'
 
