@@ -83,8 +83,6 @@ class RegistrationFormUniqueEmail(RegistrationForm):
         email_domain = self.cleaned_data['email'].split('@')[1]
         if User.objects.filter(email__iexact=self.cleaned_data['email']):
             raise forms.ValidationError(_("This email address is already in use. Please supply a different email address."))
-        if email_domain not in self.bad_domains:
-            raise forms.ValidationError(_("Please supply a valid email address."))
         return self.cleaned_data['email']
 
 

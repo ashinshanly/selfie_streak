@@ -152,8 +152,8 @@ STATICFILES_DIRS = (
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'thottanjohn@gmail.com'
-EMAIL_HOST_PASSWORD = 'johntony'
+EMAIL_HOST_USER = 'mailgun@ss.xeoscipt.com'
+EMAIL_HOST_PASSWORD = 'q1w2e3r4'
 EMAIL_PORT = 587
 
 ACCOUNT_ACTIVATION_DAYS = 7
