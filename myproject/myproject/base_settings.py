@@ -151,7 +151,7 @@ STATICFILES_DIRS = (
 
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_HOST_USER = 'mailgun@ss.xeoscipt.com'
 EMAIL_HOST_PASSWORD = 'q1w2e3r4'
 EMAIL_PORT = 587
