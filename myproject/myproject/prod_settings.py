@@ -23,6 +23,9 @@ HOME_FOLDER = os.path.join('/', 'home', 'ajumell')
 
 STATIC_ROOT = '/home/ajumell/webapps/selfie_streak_static'
 
+SITE_ID = 1
+
+
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
