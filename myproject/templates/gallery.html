@@ -15,6 +15,7 @@
       .bt-innerpagebannerv2.bt-fullheight {
 height: 100%!important;
 }
+
       </style>
     
     {% endblock %}
@@ -31,8 +32,8 @@ height: 100%!important;
     <!-- Banners -->
     {% block a %}
          {% csrf_token %}
-            <div class="bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight">
-                <figure class="bt-fullheight" data-vide-bg="poster:{% static 'images/license/green-landscape-on-the-isle-of-skye-PUSYAHG' %}" data-vide-options="position: 0% 50%">
+            <div class="bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight"  data-vide-bg="poster:{% static 'images/license/green-landscape-on-the-isle-of-skye-PUSYAHG' %}">
+                <figure>
                     <figcaption>
                         <div class="container" style="width:auto;">
                             <div class="row">
@@ -58,12 +59,12 @@ height: 100%!important;
                         </center>
         <div id="bt-threecolumnscubevonegallery" class="bt-photogallery bt-photogallerythreecolumns bt-threecolumnscubegallery cbp">
             <div class="wpb_column vc_column_container vc_col-sm-12">
-                    {% for i in pro %}
+                    {% for i in pro reversed %}
                         <div class="cbp-item">
                             <article class="bt-album">
                                 <figure>
                                     <div class="container">
-                                        <div  onclick="openModal();currentSlide({{forloop.counter}});" >
+                                        <div  onclick="openModal();currentSlide({{count}}-{{forloop.counter}});" >
                                             <img  src="{{i.image.url}}" alt="image description">
                                         </div>
                                     <figcaption>
@@ -227,8 +228,10 @@ $('i.likes').click(function(){
 {% for i in pro %}
     <div class="mySlides" >
       <div class="numbertext"></div>
-      <img class="boximage" src="{{i.image.url}}" style="width:100%">
-      <center> <h2 >{{i.image_caption}}</h2></center>
+      <img  src="{{i.image.url}}" style="width:100%">
+      <figcaption>
+        <div class="bt-titleandinfo">
+            <div class="bt-albumtitle" style="color:white; font-size:3vw">Caption:{{i.image_caption}}</div></div></figcaption>
     </div>
     {% endfor %}
 
@@ -237,12 +240,12 @@ $('i.likes').click(function(){
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     <div class="caption-container">
-      <p id="caption"></p>
+      <p id="caption" style="text-align:right;font-size:3vw" ></p>
     </div>
 
-{% for i in pro %}
+{% for i in pro  %}
     <div class="column">
-      <img class="demo cursor" src="{{i.image.url}}" style="width:100%" onclick="currentSlide('{{i.count}}-{{forloop.counter}}')" alt="{{i.user}}">
+      <img class="demo cursor" src="{{i.image.url}}" style="width:100%" onclick="currentSlide('{{forloop.counter}}')" alt="{{i.user}}">
     </div>
         {% endfor %}
   </div>
@@ -283,7 +286,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  captionText.innerHTML = "User:"+dots[slideIndex-1].alt;
 }
 </script>
     

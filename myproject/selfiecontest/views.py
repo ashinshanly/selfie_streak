@@ -57,9 +57,11 @@ class GreenEntryCreate(CreateView):
 @login_required
 def gallery(request):
         pro=Picto.objects.all()
+        count=1
         for p in pro:
             p.liked = p.has_liked(request.user)
-        return render(request, 'gallery.html',{'pro':pro,})
+            count+=1
+        return render(request, 'gallery.html',{'pro':pro,'count':count})
 
 @login_required
 def page(request):
