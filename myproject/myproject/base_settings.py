@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # third party apps
-    # 'sorl.thumbnail',
-    # 'crispy_forms',
-    'social_django',
+
+    #third party apps
+    #'sorl.thumbnail',
+    #'crispy_forms',
+    #'social_django', 
+
     'selfiecontest',
 ]
 
@@ -88,16 +90,16 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
+                #'social_django.context_processors.backends',
+                #'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.twitter.TwitterOAuth',
-    'social_core.backends.facebook.FacebookOAuth2',
+    #'social_core.backends.github.GithubOAuth2',
+    #'social_core.backends.twitter.TwitterOAuth',
+    #'social_core.backends.facebook.FacebookOAuth2',
     
     'django.contrib.auth.backends.ModelBackend',
 )
@@ -154,9 +156,9 @@ STATICFILES_DIRS = (
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'thottanjohn@gmail.com'
-EMAIL_HOST_PASSWORD = 'johntony'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = 'postmaster@ss.xeoscript.com'
+EMAIL_HOST_PASSWORD = '49ce319eadc5eac014afb1a6ad33f298'
 EMAIL_PORT = 587
 
 ACCOUNT_ACTIVATION_DAYS = 7

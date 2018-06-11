@@ -1,5 +1,13 @@
+<<<<<<< Updated upstream
 {
     "source" : "myproject",
     "application" : "selfie_streak_app",
     "pull" : true
 }
+=======
+{
+    "source" : "myproject",
+    "application" : "fed_payments_merchant_dashboard_app",
+    "pull" : true
+}
+>>>>>>> Stashed changes

@@ -9,6 +9,11 @@
       {
           margin-top: 20em;
       }
+
+
+
+
+
       </style>
     
     {% endblock %}
@@ -33,14 +38,16 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><center>
                                     <div class="bt-innerbannercontent">
                                     <br><br><br>
-                                        <h1 style="font-size: 75px;">Green Vibes</h1>
+                                        <h1 style="font-size: 7vw;">Green Vibes</h1>
                                     </div>
                                     </center>
                                 </div>
                             </div>
                         </div>
                     </figcaption>
+                    <br><br><br>
                     <a id="bt-btnscrollto" class="bt-btnscrollto bt-btnscroll" href="#bt-main">scroll</a>
+                    <br><br><br>
                 </figure>
             </div>
     <main id="bt-main" class="bt-main bt-haslayout">
@@ -49,9 +56,10 @@
                         Current Entries
                             </div>
                         </center>
+                        
         <div id="bt-threecolumnscubevonegallery" class="bt-photogallery bt-photogallerythreecolumns bt-threecolumnscubegallery cbp">
             <div class="wpb_column vc_column_container vc_col-sm-12">
-                    {% for i in pro reversed %}
+                    {% for i in pro %}
                         <div class="cbp-item">
                             <article class="bt-album">
                                 <figure>
@@ -62,7 +70,7 @@
                                     <figcaption>
                                         <div class="bt-titleandinfo">
                                             <div class="bt-albumtitle">
-                                                    <h3><a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
+                                                    <h3 style="font-size: 20px;"><a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
                                             </div>
                                             <ul class="bt-shareandlikes">
                                                 <li>
@@ -72,8 +80,8 @@
                                                         
                                                     </div>
                                                     <a class="bt-btnshare" href="javascript:void(0);">
-                                                        <span class="icon-share4"></span>
-                                                        <span>Share</span>
+                                                        <span class="icon-share4" style="font-size: 2vw;"></span>
+                                                        <span style="font-size: 2vw;">Share</span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -89,18 +97,24 @@
                                                </li>
                                                 <li>
                                                     <span>
-                                                        <div id="{{i.image_id}}">
+                                                        <div id="{{i.image_id}}" style="font-size: 2vw;">
                                                         {{i.like}}
                                                         </div>
                                                     </span>
                                                 </li>
                                             </ul>
+
                                         </div>
+
                                     </figcaption> 
                                 </div>
                                 </figure>
                             </article>
+
+
+
                         </div>
+
                      {% endfor %}
                          <!--
               <div class="vc_column-inner ">
@@ -162,11 +176,25 @@
             </div>
         </div>-->
         </div>
+
+
     </div>
+
+
+    
 </main>
+<main id="bt-main" class="bt-main bt-haslayout">
+  <center>
+     <div class="head">
+     
+     <a href="{% url 'addentry' %}" style="color: white; font-weight: bold;">ENTER</a>
+     </div>
+</center>
+
+</main>
+
 {% endblock %}
-{% block newsletter %}
-{% endblock %}
+
 {% block script %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
@@ -208,8 +236,8 @@ $('i.likes').click(function(){
 {% for i in pro %}
     <div class="mySlides">
       <div class="numbertext"></div>
-      <img class="boximage" src="{{i.image.url}}" style="width:100%">
-      <center> <h2 class="caption">{{i.image_caption}}</h2></center>
+      <img src="{{i.image.url}}" style="width:100vw; height: 60vw;">
+      <center> <h2 style="font-size: bold;">{{i.image_caption}}</h2></center>
     </div>
     {% endfor %}
 
