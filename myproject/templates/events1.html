@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "based.html" %}
 {% load staticfiles%}
 
@@ -227,4 +228,235 @@
 </html>
 {% endblock %}
 {% block b %}
+=======
+{% extends "based.html" %}
+{% load staticfiles%}
+
+{% block title %}Events{% endblock %}
+{% block events1 %}
+<li class="bt-active  bt-hasdropdown">
+    <a id="events" href="{% url 'events' %}">Events</a>
+</li>
+{% endblock %}
+{% block events %}
+<li class="bt-active bt-hasdropdown">
+    <a href="{% url 'events' %}">Events</a>
+</li>
+{% endblock %}
+
+{% block style %}
+<script src="https://use.fontawesome.com/68a1a56600.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css3/events.css' %}">
+<link rel="stylesheet" href="{% static 'css3/loader.css' %}">
+	
+<style type="text/css">
+	
+
+	body{
+
+
+		background-image: url('{% static "images/license/tuscany-spring-rolling-hills-rural-road-and-green-PURGLGH.jpg" %}');
+		background-repeat:no-repeat;
+		background-position: center center;
+        font-family: 'Poiret One', cursive;
+    }
+    html{
+        overflow-y: hidden;
+    }
+    .bt-newsletter,.bt-instagramgallery
+{
+    margin-top: 10em;
+}
+</style>
+
+<script>
+    
+                new WOW().init();
+                
+    
+            </script>          
+   
+
+       
+
+
+{% endblock %}
+
+    {% block a %}
+	<body class="fonts-3">
+	<br>
+	<br>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <br>
+<main id="bt-main" class="bt-main bt-haslayout"></main>
+	<h1 id="fonts-"><center><strong style="color: white; font-size: 3em;">Live-Contests</strong></center></h1>
+	<h1><center style="color: white; font-size: 1em;">-UnleashYourCreativity-</center></h1>
+
+	<br>
+	<br>
+	
+	<br>
+	<br>
+	
+	
+	
+		<!-- Header -->
+<div class="wide-container-fluid wide-paddings">
+            <!-- Left-right info blocks -->
+            <div class="empty-space col-sm-b15"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left-right-entry clearfix">
+                        <div class="left">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                                    <div class="cell-view">
+                                        <div class="simple-article large grey text-center">
+                                            <h2 class="small"><b>GREEN VIBES</b></h2>
+                                            <br>
+                                            <div class="empty-space col-xs-b15"></div>
+                                            <p>The Rules Of This Event Are----------- </p>
+                                            <br>
+                                            <div class="empty-space col-xs-b35"></div>
+                                            <a href="{% url 'detail' %}" class="button type-3" style="color: white;">Explore</a>
+                                             <a href="{% url 'addentry' %}" class="button type-3" style="color: white;">Enter</a>
+                                        </div>
+                                        <div class="empty-space col-sm-b20"></div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a class="entry full-size mouseover poster-3d" data-offset="5" style="background-image: url('{% static 'images/license/man-on-top-of-a-mountain-taking-a-selfie-PR26A3Y.jpg' %}'); background-position: center; opacity: 0.8" href="{% url 'detail' %}">
+                                <span class="layer-1 full-size" data-offset="10">
+                                    <span class="mouseover-helper-frame"></span>
+                                </span>
+                                <span class="layer-1 full-size" data-offset="20">
+                                    <span class="mouseover-helper-icon"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left-right-entry new-view clearfix">
+                        <div class="left">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                                    <div class="cell-view">
+                                        <div class="simple-article large grey text-center">
+                                            <h2 class="small"><b>LONG BEACH</b></h2>
+                                            <br>
+                                            <div class="empty-space col-xs-b15"></div>
+                                            <p>The Rules Of This Event Are----------- </p>
+                                            <br>
+                                            <div class="empty-space col-xs-b35"></div>
+                                            <a href="#" class="button type-3">view more</a>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a class="entry full-size mouseover poster-3d" data-offset="5" style="background-image: url(img/thumbnail-14.jpg);" href="#">
+                                <span class="layer-1 full-size" data-offset="10">
+                                    <span class="mouseover-helper-frame"></span>
+                                </span>
+                                <span class="layer-1 full-size" data-offset="20">
+                                    <span class="mouseover-helper-icon"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left-right-entry clearfix">
+                        <div class="left">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                                    <div class="cell-view">
+                                        <div class="simple-article large grey text-center">
+                                            <h2 class="small"><b>SUMMER VIBES</b></h2>
+                                            <br>
+                                            <div class="empty-space col-xs-b15"></div>
+                                            <p>The Rules Of This Event Are----------- </p>
+                                            <br>
+                                            <div class="empty-space col-xs-b35"></div>
+                                            <a href="#" class="button type-3">view more</a>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a class="entry full-size mouseover poster-3d" data-offset="5" style="background-image: url(img/thumbnail-15.jpg);" href="#">
+                                <span class="layer-1 full-size" data-offset="10">
+                                    <span class="mouseover-helper-frame"></span>
+                                </span>
+                                <span class="layer-1 full-size" data-offset="20">
+                                    <span class="mouseover-helper-icon"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left-right-entry new-view clearfix">
+                        <div class="left">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                                    <div class="cell-view">
+                                        <div class="empty-space col-sm-b20"></div>
+                                        <div class="simple-article large grey text-center">
+                                            <h2 class="small"><b>AIMER SS2015</b></h2>
+                                            <br>
+                                            <div class="empty-space col-xs-b15"></div>
+                                            <p>The Rules Of This Event Are-----------</p>
+                                            <br>
+                                            <div class="empty-space col-xs-b35"></div>
+                                            <a href="#" class="button type-3">view more</a>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a class="entry full-size mouseover poster-3d" data-offset="5" style="background-image: url(img/thumbnail-16.jpg);" href="#">
+                                <span class="layer-1 full-size" data-offset="10">
+                                    <span class="mouseover-helper-frame"></span>
+                                </span>
+                                <span class="layer-1 full-size" data-offset="20">
+                                    <span class="mouseover-helper-icon"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-space col-sm-b15"></div>
+            <!-- === -->
+
+
+			
+
+		</main>
+	</body>
+</html>
+{% endblock %}
+{% block b %}
+>>>>>>> 659e0f3b84863e77d7b53cdb048a235845dd8167
 {% endblock %}

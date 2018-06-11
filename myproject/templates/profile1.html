@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "based.html" %}
 {% load staticfiles%}
 {% block title %}Profile{% endblock %}
@@ -194,3 +195,202 @@
 {% block script %}
 {% endblock %}
 
+=======
+{% extends "based.html" %}
+{% load staticfiles%}
+{% block title %}Profile{% endblock %}
+{% block profile1 %}
+<li class="bt-active bt-hasdropdown">
+  <a id="profile" href="{% url 'profile' %}">Profile</a>
+</li>
+{% endblock %}
+{% block profile %}
+<li class="bt-active  bt-hasdropdown">
+  <a id="profile" href="{% url 'profile' %}">Profile</a>
+</li>
+{% endblock %}
+{% block a %}
+
+{% block style %}
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<!-- Online Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+<link href="{% static 'css3/profile/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css3/profile/ionicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/main.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/style.css' %}" rel="stylesheet">
+<link href="{% static 'css3/profile/responsive.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css3/loader.css' %}">
+<script src="{% static 'js3/profile/modernizr.js' %}"></script>
+
+{% endblock %}
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<body class="dark-layout">
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  
+  
+  <!-- Content -->
+  <main id="bt-main" class="bt-main bt-haslayout">
+  <div id="content"> 
+    
+    <!-- MAIN BANNER -->
+    <section class="main-bnr" style="background-image: url('{% static 'images/license/water-surface-background-PBFUEMA.jpg' %}')">
+      <div class="container">
+        <div class="media">
+          <div class="media-left"> 
+            <!-- Avatar -->
+            {% if user.profile.pic.url is not none %}
+                <div class="avatar"><img class="img-responsive" src="{{user.profile.pic.url}}" alt="image description"></div>
+            {% else %}
+                <div class="avatar"><img class="img-responsive" src="{% static 'images/index6/img-07.jpg' %}" alt="image description"></div>
+            {% endif %}
+            
+          </div>
+          <div class="media-body">
+            <h1>
+
+            <strong style="color: white;">{{ user.username }}</strong>
+            </h1>
+            <p style="color: white;"><i class="fa fa-university"></i> &nbsp {{ user.profile.college }}</p>
+            <p style="color: white;"><i class="fa fa-map-marker"></i> {{ user.profile.city}}</p>
+            <li>
+                                        <span style="color: white;">Email:</span>
+                                        <strong style="text-transform:lowercase; color: white;">{{ user.email }}</strong>
+                                    </li>
+                                    
+            <div class="flowers"> <span style="color: white;"><i class="fa fa-mobile"></i>   Snaps: {{snaps}} </span><span style="color: white;"><i class="fa fa-heart"></i>  Likes: {{likes}}</span> </div>
+
+            
+                                   
+            
+            <!-- Btn --> 
+            <a href="#." data-toggle="modal" data-target="#myModal" class="btn"><i class="fa fa-envelope-o"></i>Send A Message</a> <a href="{% url 'edit_profile' %}" class="button btn btn-primary">EditProfile</a>
+        </div>
+      </div>
+      
+      <!-- COnatct Form PopUp -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="container">
+              <h6><a class="close" href="#." data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a> Send Message</h6>
+              
+              <!-- Forms -->
+              <form action="#">
+                <ul class="row">
+                  <li class="col-xs-12">
+                    <input type="text" placeholder="First Name ">
+                  </li>
+                  <li class="col-xs-6">
+                    <input type="text" placeholder="Email">
+                  </li>
+                  <li class="col-xs-6">
+                    <input type="text" placeholder="Subjext">
+                  </li>
+                  <li class="col-xs-12">
+                    <textarea placeholder="Your Message"></textarea>
+                  </li>
+                  <li class="col-xs-12 text-center">
+                    <button class="btn btn-primary">Send message</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COnatct Form PopUp --> 
+    </section>
+    
+    <!-- Nav Bar Block -->
+    <div class="container">
+      <div class="nav-bar-block">
+        <ul>
+          <li><a class="active" href="/profile/">Snaps</a></li>
+          <li> <a href="#">Trophies</a></li>
+          
+        </ul>
+        
+    </div>
+    
+    <!-- About Block -->
+    <section class="block-about">
+      <div class="container">
+        <div class="row"> 
+
+          
+          <!-- About Text -->
+          <div class="col-md-12" style="color: white;">
+
+             <div id="bt-portfoliovonegallery" class="bt-portfoliogallery">
+
+
+                              {% for i in entries %}
+                                <div class="cbp-item">
+                                    <article class="bt-album">
+                                        <figure>
+                                            <img src="{{ i.image.url}}" alt="image description">
+                                            <figcaption>
+                                                <a class="bt-btnviewimg cbp-lightbox" href="{{ i.image.url }}" data-title="{{ i.image_id}}"></a>
+                                                <p class="fa fa-heart fa-lg" style="font-style:bold; margin-left:10px;margin-top:10px"> {{i.like}}</p>
+                                              </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>  
+                              {% endfor %}          
+              </div>
+
+
+
+
+            <div>
+              <h4 style="font-size: 3em;"><center>Bio</center></h4>
+              <p><center>A brief description about yourself</center></p>
+            </div>
+          </div>
+          
+        </main>
+          
+  
+ 
+  
+
+<script src="{% static 'js3/profile/jquery-1.11.3.min.js' %}"></script> 
+<script src="{% static 'js3/profile/bootstrap.min.js' %}"></script> 
+<script src="{% static 'js3/profile/own-menu.js' %}"></script> 
+<script src="{% static 'js3/profile/jquery.magnific-popup.min.js' %}"></script> 
+<script src="{% static 'js3/profile/jquery.isotope.min.js' %}"></script> 
+<script src="{% static 'js3/profile/owl.carousel.min.js' %}"></script> 
+<script src="{% static 'js3/profile/main.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+{% block script %}
+{% endblock %}
+
+>>>>>>> 659e0f3b84863e77d7b53cdb048a235845dd8167

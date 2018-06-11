@@ -5,7 +5,11 @@ from base_settings import *
 ADMINS = (
     ('Muhammed K K', 'ajumell@xeoscript.com'),
     ('John Tony Thottan', 'thottanjohn@gmail.com'),
+<<<<<<< HEAD
     ('Ashin Shanly', 'ashinkoottala@gmail.com')
+=======
+    ('Ashin Shanly', 'ashin@gmail.com')
+>>>>>>> 659e0f3b84863e77d7b53cdb048a235845dd8167
 )
 
 MANAGERS = ADMINS
@@ -21,7 +25,10 @@ ALLOWED_HOSTS = [
 
 HOME_FOLDER = os.path.join('/', 'home', 'ajumell')
 
-STATIC_ROOT = 'home/ajumell/webapps/selfie_streak_static'
+STATIC_ROOT = '/home/ajumell/webapps/selfie_streak_static'
+
+SITE_ID = 1
+
 
 STATIC_URL = '/static/'
 

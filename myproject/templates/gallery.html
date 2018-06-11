@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'based.html' %}
 {% load staticfiles %}
 
@@ -298,4 +299,300 @@ function showSlides(n) {
     
 
 {% endblock %}
+=======
+{% extends 'based.html' %}
+{% load staticfiles %}
+
+{% block title %}Entries{% endblock %}
+{% block style %}
+      <link href="{% static 'css3/glightbox.css' %}" rel="stylesheet"> 
+      <style>
+        .bt-newsletter,.bt-instagramgallery
+      {
+          margin-top: 20em;
+      }
+      .modal{
+          z-index: 100000;
+      }
+      .bt-innerpagebannerv2.bt-fullheight {
+height: 100%!important;
+}
+
+      </style>
+    
+    {% endblock %}
+    {% block events1 %}
+    <li class="bt-active  bt-hasdropdown">
+        <a id="events" href="{% url 'events' %}">Events</a>
+    </li>
+    {% endblock %}
+    {% block events %}
+    <li class="bt-active bt-hasdropdown">
+        <a href="{% url 'events' %}">Events</a>
+    </li>
+    {% endblock %}
+    <!-- Banners -->
+    {% block a %}
+         {% csrf_token %}
+            <div class="bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight"  data-vide-bg="poster:{% static 'images/license/green-landscape-on-the-isle-of-skye-PUSYAHG' %}">
+                <figure>
+                    <figcaption>
+                        <div class="container" style="width:auto;">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><center>
+                                    <div class="bt-innerbannercontent">
+                                    <br><br><br>
+                                        <h1 style="font-size: 7vw;">Green Vibes</h1>
+                                    </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <a id="bt-btnscrollto" class="bt-btnscrollto bt-btnscroll" href="#bt-main">scroll</a>
+                    <br><br><br>
+                </figure>
+            </div>
+    <main id="bt-main" class="bt-main bt-haslayout">
+                        <center>
+                            <div class="head">
+                        Current Entries
+                            </div>
+                        </center>
+        <div id="bt-threecolumnscubevonegallery" class="bt-photogallery bt-photogallerythreecolumns bt-threecolumnscubegallery cbp">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                    {% for i in pro reversed %}
+                        <div class="cbp-item">
+                            <article class="bt-album">
+                                <figure>
+                                    <div class="container">
+                                        <div  onclick="openModal();currentSlide({{count}}-{{forloop.counter}});" >
+                                            <img  src="{{i.image.url}}" alt="image description">
+                                        </div>
+                                    <figcaption>
+                                        <div class="bt-titleandinfo">
+                                            <div class="bt-albumtitle">
+                                                    <h3 ><a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
+                                            </div>
+                                            <ul class="bt-shareandlikes">
+                                                <li>
+                                                    <div class="bt-shapreicons">
+                                                        <!--<a href="http://twitter.com/intent/tweet?text={{ request.get_full_path|urlencode }}"><i class="fa fa-twitter"></i></a> -->
+                                                        <a href="http://www.facebook.com/sharer/sharer.php?u={{ request.get_full_path|urlencode }}"><i class="fa fa-facebook"></i></a>
+                                                        
+                                                    </div>
+                                                    <a class="bt-btnshare" href="javascript:void(0);">
+                                                        <span class="icon-share4" ></span>
+                                                        <span   >Share</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                        <div  class="buttonpos" onclick="">
+                                                            <span>
+                                                                {% if i.liked %}
+                                                                <i data-catid="{{ i.image_id }}"   class="likes {{i.image_id}} fa fa-heart fa-2x"  aria-hidden="true"  ></i>
+                                                                {% else %}
+                                                                <i data-catid="{{ i.image_id }}"   class="likes {{i.image_id}} fa fa-heart-o fa-2x"  aria-hidden="true"  ></i>
+                                                                {% endif %}
+                                                            </span>
+                                                        </div>
+                                               </li>
+                                                <li>
+                                                    <span>
+                                                        <div id="{{i.image_id}}" >
+                                                        {{i.like}}
+                                                        </div>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </figcaption> 
+                                </div>
+                                </figure>
+                            </article>
+                        </div>
+
+                     {% endfor %}
+
+                         <!--
+              <div class="vc_column-inner ">
+                  <div class="wpb_wrapper">
+                      <div id="galleryGeneral" class="bt-photogallery cbp" data-columnspace="0" data-gallerycolumns="3">
+                    
+                          {% for i in pro %}
+                          <div class="cbp-item gallery-3-columns-wide"  >
+                       <figure >
+                       
+                                      <div onclick="openModal();currentSlide({{forloop.counter}});" >
+                                      <img src="{{i.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"  alt="" srcset="{{i.image.url}} 633w,{{i.image.url}} 300w, {{i.image.url}} 600w" sizes="(max-width: 633px) 100vw, 633px" style="width:633; height:700;" >
+                                      </div>
+                                        <figcaption>
+                                            <div class="bt-titleandinfo">
+                                                <div class="bt-albumtitle">
+                                                    <h3><a <a href="{% url 'altprofile' i.user %}">{{i.user}}</a></h3>
+                                                    </div>
+                                                    <ul class="bt-shareandlikes">
+                                                        <li><div class="bt-shapreicons">
+                                                            <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=http://tasver.brighthemes.biz/gallery/twin-sister-album/&amp;text=TWIN Sister Album&tw_p=tweetbutton&url=http://tasver.brighthemes.biz/gallery/twin-sister-album/&via=Tasver Photography">
+                                                            <i class="fa fa-twitter"></i></a>
+                                                            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://tasver.brighthemes.biz/gallery/twin-sister-album/&amp;t=TWIN Sister Album">
+                                                            <i class="fa fa-facebook"></i></a>
+                                                            <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://tasver.brighthemes.biz/gallery/twin-sister-album/&amp;title=TWIN Sister Album&amp;source=Tasver Photography">
+                                                            <i class="fa fa-linkedin"></i></a>
+                                                            <a target="" href="https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=http://tasver.brighthemes.biz/gallery/twin-sister-album/">
+                                                            <i class="fa fa-google-plus"></i></a>
+                                                            </div>
+                                                            <a class="bt-btnshare" href="javascript:void(0);"><span class="icon-share4"></span>
+                                                            <span>Share</span></a>
+                                                            </li>
+                                                            <li>
+                                                 <div  class="buttonpos" onclick="">
+											{% if i.liked %}
+											<i data-catid="{{ i.image_id }}"   class="likes {{i.image_id}} fa fa-heart fa-2x"  aria-hidden="true"  ></i>
+											{% else %}
+											<i data-catid="{{ i.image_id }}"   class="likes {{i.image_id}} fa fa-heart-o fa-2x"  aria-hidden="true"  ></i>
+											{% endif %}
+											</div></li>
+                                                    	<li><span><div id="{{i.image_id}}">
+											{{i.like}}
+										</div></span></li>
+                                                </ul>
+                                             </div>
+                                         </figcaption>
+                                    </figure>
+                                </article>
+                         </div>
+                         {% endfor %}
+                          </div>  
+                         <div id="bt-loadMore" class="bt-btnboxloadmore bt-sectionspace cbp-l-loadMore-button">
+                    <a href="http://tasver.brighthemes.biz/?page_id=368&number_of_posts=8&select_gallery_categories=7" class="cbp-l-loadMore-link" rel="nofollow">
+                    <span class="cbp-l-loadMore-defaultText">Load More</span>
+                    <span class="cbp-l-loadMore-loadingText">Loading...</span>
+                    <span class="cbp-l-loadMore-noMoreLoading">No More Work</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+  
+        </div>
+         
+    </div>
+    
+    </main>
+    <main id="bt-main" class="bt-main bt-haslayout">
+        <center>
+            <div class="head">
+                <a style="color:white" href="{% url 'addentry' %}"> Enter</a>
+            </div>
+        </center>
+</main>
+{% endblock %}
+{% block newsletter %}
+{% endblock %}
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$('i.likes').click(function(){
+     var catid;
+     catid = $(this).attr("data-catid");
+   // $.get('/page/', {image_id : catid}, function(data){
+		//	$('#'+catid).html(data.like);
+			//$('.'+catid).html(data.bol);
+	//	});
+    // });
+		$.ajax({
+						url: '/page/',
+                        data:{ 'image_id': catid,
+						csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value
+						 } ,
+                        type: 'POST',
+						dataType: 'json',
+						success: function(data){
+							$('#'+catid).html(data.like);
+							if (data.bol==1)
+							{
+								$('.'+catid).removeClass("fa-heart-o").addClass("fa-heart")
+							}
+							else
+							{
+								$('.'+catid).removeClass("fa-heart").addClass("fa-heart-o")
+							}
+
+						}
+		});
+});
+</script>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+{% for i in pro %}
+    <div class="mySlides" >
+      <div class="numbertext"></div>
+      <img  src="{{i.image.url}}" style="width:100%">
+      <figcaption>
+        <div class="bt-titleandinfo">
+            <div class="bt-albumtitle" style="color:white; font-size:3vw">Caption:{{i.image_caption}}</div></div></figcaption>
+    </div>
+    {% endfor %}
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" style="text-align:right;font-size:3vw" ></p>
+    </div>
+
+{% for i in pro  %}
+    <div class="column">
+      <img class="demo cursor" src="{{i.image.url}}" style="width:100%" onclick="currentSlide('{{forloop.counter}}')" alt="{{i.user}}">
+    </div>
+        {% endfor %}
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {                
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = "User:"+dots[slideIndex-1].alt;
+}
+</script>
+    
+
+{% endblock %}
+>>>>>>> 659e0f3b84863e77d7b53cdb048a235845dd8167
       

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% load staticfiles %}
 <!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -318,4 +319,327 @@ height:  auto;
 </body>
 
 <!-- Mirrored from wahabali.com/work/tasver/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Sep 2017 09:06:03 GMT -->
+=======
+{% load staticfiles %}
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from wahabali.com/work/tasver/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Sep 2017 09:06:03 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %} SelfieStreak{% endblock %}</title>
+	<!--<link rel="stylesheet" href="{% static 'css3/layout.css' %}">-->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="{% static 'css3/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/icomoon.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/cubeportfolio.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/jgallery.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/pogoslider.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/prettyPhoto.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/slick-theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/transitions.css' %}">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/color.css' %}">
+	<link rel="stylesheet" href="{% static 'css3/responsive.css' %}">
+	
+
+
+	<script src="{% static 'js3/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+	<style>
+		.bt-footerborder 
+		{
+		border:none;
+		}
+		.g{
+			height: 100%;
+			width: 100%;
+		}
+		.bt-active{
+			font-size: 20px;
+			text-decoration:none;
+		}
+
+			</style>
+	{% block style %}
+<!--	<style>
+		html,body{
+			padding: 0px;
+			margin: 0px;
+position: static;
+height:  auto;
+		}
+	</style> -->
+			{% endblock %}
+</head>
+<body "page-template-default wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			PreLoader Start
+	*************************************-->
+	<div id="bt-preloader"><div class="bt-preloadericon"></div></div>
+	
+	
+	
+	
+	
+	<!--************************************
+			PreLoader End
+    *************************************-->
+
+            <!--************************************
+                    Header Start
+            *************************************-->
+            <nav id="bt-nav" class="bt-nav">
+					<a class="bt-btntogglemenu" href="javascript:void(0);">X</a>
+					<div id="bt-navigation" class="bt-navigation">
+						<strong class="bt-logo"><a href="index.html"><img class="g" src="{% static 'images/whitelogo.png' %}" alt="image description"></a></strong>
+						<ul class="bt-menu">
+							{% block home1 %}
+							<li class="bt-hasdropdown">
+								<a id="home" href="{% url 'home' %}">Home</a>
+							</li>
+							{% endblock %}
+							{% block events1 %}
+							<li class="bt-hasdropdown">
+								<a id="events" href="{% url 'events' %}">Events</a>
+							</li>
+							{% endblock %}
+							{% if user.is_authenticated %}
+							{% block profile1 %}
+							<li class="bt-hasdropdown">
+								<a id="profile" href="{% url 'profile' %}">Profile</a>
+							</li>
+							{% endblock %}
+							{% endif %}
+							{% block about1 %}
+							<li class="bt-hasdropdown">
+								<a id="about" href="{% url 'about' %}">About Us</a>
+							</li>
+							{% endblock %}
+							{% block contact1 %}
+							<li class="bt-hasdropdown">
+								<a id="contact" href="{% url 'contact' %}">Contact Us</a>
+							</li>
+							{% endblock %}
+							{% if user.is_authenticated %}
+							{% block logout1 %}
+							<li class="bt-hasdropdown">
+								<a id="logout" href="{% url 'register:auth_logout' %}">Logout</a>
+							</li>
+							{% endblock %}
+							{% else %}
+							{% block login1 %}
+							<li class="bt-hasdropdown">
+								<a id="login" href="{% url 'register:auth_login' %}">Login</a>
+							</li>
+							{% endblock %}
+							{% block signup1 %}
+							<li class="bt-hasdropdown">
+								<a id="signup" href="{% url 'register:registration_register' %}">SignUp</a>
+							</li>
+							{% endblock %}
+							{% endif %}
+						</ul>
+						<ul class="bt-socialicons">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+						<ul class="bt-navinfo">
+							<li><span>Email </span><a href="info%40tasver.html">info@tasver.com</a></li>
+							<li><span>Phone +49 900 234 55 - 6</span></li>
+							<li><address>Manhatta Hall Advisor Ltd 1258, Melbourne, australia</address></li>
+						</ul>
+					</div>
+				</nav>
+				 {% block header %}
+				<header id="bt-header" class="bt-header bt-headervfour bt-headerinnerpage bt-headerinnerpagev1 bt-haslayout">
+					<div class="container-fluid">
+				{% endblock %}
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<strong class="bt-logo"><a href="{% url 'home' %}">{% block logo %}<img src="{% static 'images/whitelogo.png' %}" alt="image description">{% endblock %}</a></strong>
+							<div class="bt-navigationarea">
+								<ul>
+									{% block home %}
+									<li class="bt-hasdropdown">
+										<a  href="{% url 'home' %}">Home</a>
+									</li>
+									{% endblock %}
+									{% block events %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'events' %}">Events</a>
+									</li>
+									{% endblock %}
+									{% if user.is_authenticated %}
+									{% block profile %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'profile' %}">Profile</a>
+									</li>
+									{% endblock %}
+									{% endif %}
+									{% block about %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'about' %}">About Us</a>
+									</li>
+									{% endblock %}
+									{% block contact %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'contact' %}">Contact Us</a>
+									</li>
+									{% endblock %}
+									{% if user.is_authenticated %}
+									{% block logout %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'register:auth_logout' %}">Logout</a>
+									</li>
+									{% endblock %}
+									{% else %}
+									{% block login %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'register:auth_login' %}">Login</a>
+									</li>
+									{% endblock %}
+									{% block signup %}
+									<li class="bt-hasdropdown">
+										<a href="{% url 'register:registration_register' %}">SignUp</a>
+									</li>
+									{% endblock %}
+									{% endif %}
+									{% block icon %}
+									<li><a class="bt-btntogglemenu" href="javascript:void(0);"><img src="{% static 'images/icons/icon-01.png' %}" alt="image description"></a></li>
+									{% endblock %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+            <!--************************************
+                    Header End
+            *************************************-->
+        
+{% block a %}
+{% endblock %}
+{% block footer %}
+        <!--************************************
+				Footer Start
+		*************************************-->
+		<footer id="bt-footer" class="bt-footer bt-footerborder bt-haslayout">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<!--	{% block newsletter %}
+						<div class="bt-newsletter">
+							<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+								<h3>Newsletter</h3>
+								<div class="bt-description">
+									<p>Latest Photos from Tasver Get alert for new Photoshoot</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+								<form class="bt-formtheme bt-formnewsletter">
+									<fieldset>
+										<input type="email" name="email" class="form-control" placeholder="Enter your E-mail">
+										<button type="submit"><i class="icon-email2"></i></button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						{% endblock %}-->
+						<div class="bt-instagramgallery">
+							<ul>
+								<li>
+									<figure><a href="{% static 'images/instagram/img-01.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-01.jpg' %}" alt="image description"></a></figure>
+									<figure><a href="{% static 'images/instagram/img-05.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-05.jpg' %}" alt="image description"></a></figure>
+								</li>
+								<li>
+									<figure><a href="{% static 'images/instagram/img-02.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-02.jpg' %}" alt="image description"></a></figure>
+									<figure><a href="{% static 'images/instagram/img-06.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-06.jpg' %}" alt="image description"></a></figure>
+									<figure><a href="{% static 'images/instagram/img-08.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-08.jpg' %}" alt="image description"></a></figure>
+								</li>
+								<li>
+									<figure><a href="{% static 'images/instagram/img-03.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-03.jpg' %}" alt="image description"></a></figure>
+									<figure><a href="{% static 'images/instagram/img-07.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-07.jpg' %}" alt="image description"></a></figure>
+								</li>
+								<li><figure><a href="{% static 'images/instagram/img-04.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-04.jpg' %}" alt="image description"></a></figure></li>
+							</ul>
+							<div class="bt-instagrambox">
+								<i><img src="{% static 'images/icons/icon-02.png' %}" alt="image description"></i>
+								<span>@tasver</span>
+								<a class="bt-btn bt-btnblack bt-btn-lg" href="javascript:void(0);"><span>follow now</span></a>
+							</div>
+						</div>
+						<div class="bt-footerbar">
+							<div class="bt-navandcopyright">
+								<nav class="bt-addnav">
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">TERMS OF SERVICES</a></li>
+										<li><a href="#">PRIVACY &amp; COOKIES</a></li>
+										<li><a href="#">CONTACT Us</a></li>
+									</ul>
+								</nav>
+								<span class="bt-copyright">Copyrights 2017 Tasver. All rights reserved</span>
+							</div>
+							<div class="bt-followus">
+								<span>follow us</span>
+								<ul class="bt-socialicons">
+									<li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	{% endblock %}
+	{% block script %}
+	
+	{% endblock %}
+	{% block jquery-library %}
+	<script src="{% static 'js3/vendor/jquery-library.js' %}"></script>
+	{% endblock %}
+	<script src="{% static 'js3/vendor/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js3/jquery.cubeportfolio.min.js' %}"></script>
+	<script src="{% static 'js3/tinycolor-0.9.16.min.js' %}"></script>
+	<script src="{% static 'js3/jquery.scrollTo.min.js' %}"></script>
+	<script src="{% static 'js3/jquery.pogoslider.js' %}"></script>
+	<script src="{% static 'js3/touchswipe.min.js' %}"></script>
+	<script src="{% static 'js3/jgallery.min.js' %}"></script>
+	<script src="{% static 'js3/jquery.vide.js' %}"></script>
+	<script src="{% static 'js3/prettyPhoto.js' %}"></script>
+	<script src="{% static 'js3/slick.min.js' %}"></script>
+	<script src="{% static 'js3/parallax.js' %}"></script>
+	<script src="{% static 'js3/countTo.js' %}"></script>
+	<script src="{% static 'js3/appear.js' %}"></script>
+	
+	
+	{% block theme %}
+	<script src="{% static 'js3/themefunction.js' %}"></script>
+	{% endblock %}
+	<!--
+	<script src="{% static 'js3/pace.js' %}"></script>
+	<script src="{% static 'js3/template.js' %}"></script>-->
+</body>
+
+<!-- Mirrored from wahabali.com/work/tasver/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Sep 2017 09:06:03 GMT -->
+>>>>>>> 659e0f3b84863e77d7b53cdb048a235845dd8167
 </html>

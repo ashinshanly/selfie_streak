@@ -1,0 +1,291 @@
+{% extends "based.html" %}
+{% load staticfiles%}
+<!DOCTYPE HTML>
+
+
+{% block a %}
+<html>
+<head>
+
+
+<!--<script type="text/javascript" src="{% static 'js3/particles.js' %}"></script>-->
+<script type="text/javascript" src="{% static 'js3/particles.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js3/selfiestreak.js' %}"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SoonX</title>
+
+<link rel="icon" type="image/png" href="{% static 'images/ban3.jpg' %}">
+
+<!--<link href="{% static 'css3/media.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css3/soonx.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<link rel="stylesheet" media="screen" href="{% static 'css3/style3.css' %}">
+
+<link href="{% static 'css3/style3.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css3/main.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css3/selfiestreak.css' %}" rel='stylesheet' type='text/css' />
+
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+
+<style type="text/css">
+  
+
+  /*@media (max-width: 450px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here /
+    .bt-headerinnerpage{
+      height: auto; width: 100px; margin: auto; padding: 0; color: white; opacity: 0.5; font-size: 12vw; width: 50vw; margin-top: 50%; margin-left: 18%;
+      float: center;
+
+
+    }
+    .bt-headerinnerpage .bt-logo{
+    width: 170px;
+    float: left !important;
+    margin: 0 auto;
+    display: block;
+   }
+
+   .bt-headerinnerpage .bt-nav,
+   .bt-headerinnerpage .bt-navigationarea,
+   .bt-headerinnerpage .bt-navigationarea > ul{
+     width: 100%;
+     float: right !important;
+  }
+  
+}*/
+  @media screen and (max-width: 600px)
+  {
+
+    .bt-headerinnerpage{
+      position:unset;
+    }
+    .custom_header{
+      position: absolute;
+    top: 41%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    }
+
+    .custom_header > center + center > a {
+      text-align: center;
+      margin-left: 0px !important;
+    }
+
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<!--<body class="space">
+
+
+
+<!- started id wrap  ->
+
+<div id="wrap"> 
+
+  <!-starts logo div ->
+  <br>
+          
+  <div class="logo">
+    <div class="container"> <a href="#."><img src="{% static 'images/bgcamera2.png' %}" alt="SoonX logo" /></a> </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!-ended logo div ->
+  
+  <div class="clear"></div>
+  
+  <!- starts counter ->
+  
+  <div class="counter spacecounter">
+    <div class="container">
+      
+      <div class="spacenotify mid">
+        <h1>-Selfie_Streak-</h1>
+          <div class="field">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br><br>
+          <br>
+          <br><br>
+          <br>
+          <br>
+        
+          
+     </div>
+     <div class="clear"></div>
+     <div class="spacesocial">
+        <ul>
+          <li><a href="#." class="fa fb"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#." class="fa tw"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#." class="fa in"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#." class="fa gp"><i class="fa fa-google"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!- end counter ->
+  <div class="clear"></div>
+  
+  <!- start footer ->
+  
+  <div class="spacefooter">
+    <div class="container">
+      <p>Copyrights © 2016 SoonX - All Rights Reserved.</p>  
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <!-end footer -> 
+  
+</div> -->
+
+
+
+<!-- count particles -->
+
+
+
+<!-- particles.js container -->
+<div id="particles-js"  style="text-align:center;">
+
+
+
+
+
+
+
+
+
+<!-- scripts -->
+<script src="{% static 'js3/particles.js' %}"></script>
+<script src="{% static 'js3/app.js' %}"></script>
+
+<!-- stats.js ->
+<script src="{% static 'js3/lib/stats.js' %}"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+
+</script>-->
+
+
+
+
+
+
+<div class="bt-headerinnerpage" style="float: center !important; height: auto; width: 100px; margin: auto; padding: 0; color: white; opacity: 0.5; font-size: 12vw; width: wrap; margin-top: 20vw; margin-left: 16%; ">
+<div class="custom_header">
+<center>#SelfieStreak</center><center><a href="events" class="button" style="color: white; font-size: 3.5vw; opacity: 0.5; border: 2px solid white; border-radius: 15px; padding: 5px; float: center !important; margin-left: 25vw;">Get&nbspStarted</a></center></div></div>
+
+   
+     
+
+
+
+
+ <!--************************************
+        Footer Start
+    *************************************-->
+    <footer id="bt-footer" class="bt-footer bt-footerborder bt-haslayout">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+            <div class="bt-instagramgallery">
+              <ul>
+                <li>
+                  <figure><a href="{% static 'images/instagram/img-01.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-01.jpg' %}" alt="image description"></a></figure>
+                  <figure><a href="{% static 'images/instagram/img-05.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-05.jpg' %}" alt="image description"></a></figure>
+                </li>
+                <li>
+                  <figure><a href="{% static 'images/instagram/img-02.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-02.jpg' %}" alt="image description"></a></figure>
+                  <figure><a href="{% static 'images/instagram/img-06.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-06.jpg' %}" alt="image description"></a></figure>
+                  <figure><a href="{% static 'images/instagram/img-08.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-08.jpg' %}" alt="image description"></a></figure>
+                </li>
+                <li>
+                  <figure><a href="{% static 'images/instagram/img-03.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-03.jpg' %}" alt="image description"></a></figure>
+                  <figure><a href="{% static 'images/instagram/img-07.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-07.jpg' %}" alt="image description"></a></figure>
+                </li>
+                <li><figure><a href="{% static 'images/instagram/img-04.jpg' %}" data-rel="prettyPhoto[instagramphotos]"><img src="{% static 'images/instagram/img-04.jpg' %}" alt="image description"></a></figure></li>
+              </ul>
+              <div class="bt-instagrambox">
+                <i><img src="{% static 'images/icons/icon-02.png' %}" alt="image description"></i>
+                <span>@tasver</span>
+                <a class="bt-btn bt-btnblack bt-btn-lg" href="javascript:void(0);"><span>follow now</span></a>
+              </div>
+            </div>
+            <div class="bt-footerbar">
+              <div class="bt-navandcopyright">
+                <nav class="bt-addnav">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">TERMS OF SERVICES</a></li>
+                    <li><a href="#">PRIVACY &amp; COOKIES</a></li>
+                    <li><a href="#">CONTACT Us</a></li>
+                  </ul>
+                </nav>
+                <span class="bt-copyright">Copyrights 2017 SelfieStreak. All rights reserved</span>
+              </div>
+              <div class="bt-followus">
+                <span>follow us</span>
+                <ul class="bt-socialicons">
+                  <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--************************************
+        Footer End
+    *************************************-->
+  </div>
+
+
+
+ 
+
+
+
+</body>
+</html>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
